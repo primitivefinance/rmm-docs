@@ -4,7 +4,7 @@ description: Describes the process of creating virtual curves.
 
 # Technical: Create New Pools
 
-### Create Function
+## Create Function
 
 [Source Code](https://github.com/primitivefinance/primitive-v2-core/blob/6b54e1e203ab6c4dd4d3e6def6eb971e897bc4af/contracts/PrimitiveEngine.sol#L96-L166)
 
@@ -38,10 +38,7 @@ description: Describes the process of creating virtual curves.
 The create function is responsible for both:
 
 1. Storing the parameters of the curve in the `settings` state variable, using the keccak256 hash of the parameters as the key
-
 2. Initializing the reserves state and balance with the correct amount of tokens \(more on this in the next section\).
 
-
-
-### Initializing the Reserves
+## Initializing the Reserves
 

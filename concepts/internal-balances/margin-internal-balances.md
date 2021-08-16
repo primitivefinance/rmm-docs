@@ -4,7 +4,7 @@ description: Technical explanation of margin related functions.
 
 # Technical: Internal Balances
 
-### Margin Data Struct
+## Margin Data Struct
 
 [Source Code](https://github.com/primitivefinance/primitive-v2-core/blob/main/contracts/libraries/Margin.sol)
 
@@ -16,9 +16,9 @@ description: Technical explanation of margin related functions.
     }
 ```
 
-### Margin Engine Functions
+## Margin Engine Functions
 
-#### Deposit
+### Deposit
 
 [Source Code](https://github.com/primitivefinance/primitive-v2-core/blob/0fdb11272fcb423b32be5a260f73e36977c43c86/contracts/PrimitiveEngine.sol#L149-L160)
 
@@ -68,8 +68,6 @@ function deposit(
     }
 ```
 
-
-
 The process of the deposit function is as follows:
 
 1. Store `risky` and `stable` token balances in memory.
@@ -78,7 +76,7 @@ The process of the deposit function is as follows:
 4. If the check passed, increase state balance of margin of `owner`.
 5. Emit the Deposited event.
 
-#### Withdraw
+### Withdraw
 
 [Source Code](https://github.com/primitivefinance/primitive-v2-core/blob/6b54e1e203ab6c4dd4d3e6def6eb971e897bc4af/contracts/PrimitiveEngine.sol#L169-L174)
 

@@ -4,7 +4,7 @@ description: How we manipulate mocha and chai to serve our purposes
 
 # Mocha and Chai
 
-### Mocha
+## Mocha
 
 The mocha testing framework has a global namespace `mocha`. We directly add items to the global namespace so we can easily access them in our tests.
 
@@ -30,9 +30,7 @@ These new items are accessible in our tests through using `this`. These must be 
 
 `configs`: Primitive AMM curve configurations, unique to Primitive testing environment
 
-
-
-### Chai
+## Chai
 
 The waffle framework has custom chai matchers for testing smart contracts. We extend this further and build custom matchers for the Primitive smart contracts.
 
@@ -92,8 +90,6 @@ declare global {
 ```
 
 These are some of the matchers we introduce to easily check state changes.
-
-
 
 Both these namespaces are appended in the `./types/index.d.ts` file.
 

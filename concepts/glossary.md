@@ -6,5 +6,3 @@ Portfolio: Two or more assets composed under the same instrument.
 
 Replication: Mimicking a value of another singular instrument at infinitesmal points in time by using a portfolio.
 
-
-

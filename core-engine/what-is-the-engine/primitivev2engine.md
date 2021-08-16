@@ -24,7 +24,7 @@ The next variables, strike, volatility, and maturity, are _curve parameters_, an
 
 ### Provide Liquidity to the Curve
 
-Once a curve is available, its `poolId` is a hash of the Factory address, and its curve parameters. Tokens can be supplied to the curve and in exchange a `position` is created. 
+Once a curve is available, its `poolId` is a hash of the Factory address, and its curve parameters. Tokens can be supplied to the curve and in exchange a `position` is created.
 
 ### Positions
 
@@ -49,8 +49,6 @@ To exit the position, the user must pay back the debt of 1 unit of LP share, usi
 ### Swapping Between Tokens
 
 The curve defines a trading rule which allows swaps between the risky and stable token. An `amountIn` of token must be specified, along with a direction of swapping tokens. The low-level swap has one critical check, in which the invariant is compared pre and post the swap. If the invariant has not stayed in the same, or grown after the swap, then the swap will fail.
-
-
 
 ### Source Code
 
