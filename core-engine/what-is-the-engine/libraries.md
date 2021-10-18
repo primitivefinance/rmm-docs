@@ -9,8 +9,8 @@ The core contracts make use of several libraries, including ABDK64x64, a fixed p
 ### Math libraries:
 
 * ABDKMath64x64
-* CumulativeNormalDistribution: Implements a CDF and Inverse CDF (Quantile) function using ABDK Math Library.
-* ReplicationMath: Implements the AMM specific math, like the trading function.
+* CumulativeNormalDistribution: Implements a CDF and Inverse CDF (Quantile) function using approximations and the ABDK Math Library.
+* ReplicationMath: Implements the AMM specific math, like the trading function and invariant calculation.
 
 ### Accounting libraries:
 

@@ -6,13 +6,13 @@ description: Overview of Liquidity provision and Liquidity positions
 
 Primitive Pools are composed of the risky and stable tokens which can be provided as liquidity. Each pool is an individual "curve". 
 
-For RMM-01, the curve is calibrated using the parameters of a covered call, i.e `strike` `volatility` and `maturity`.
+For RMM-01, each curve is calibrated using the parameters `strike` `volatility` and `maturity`.
 
 Pools can be deployed permissionlessly for any token pair through the Primitive Factory contract.
 
 ### Why provide liquidity? Do I earn rewards?
 
-Supplying tokens to the chosen curve will give you a position in a portfolio that tracks the value of the covered call, such that when liquidity is redeemed it will be valued at the value of the covered call its tracking. 
+Supplying tokens to the chosen curve will give you a position in a portfolio that tracks the value of the covered call, such that when liquidity is redeemed it will be valued at the value of the covered call its tracking. The swap fees generated are distrubtued pro-rata to the liquidity providers by being reinvested into the pool.
 
 ### Where does yield come from?
 
@@ -20,7 +20,7 @@ Covered calls naturally accrue value (called _theta_), which in the RMM-01 case,
 
 ### Are there liquidity mining incentives?
 
-The protocol does not have liquidity mining incentives.
+The Protocol does not have liquidity mining incentives.
 
 ### What happens when tokens are provided as liquidity?
 
@@ -28,5 +28,5 @@ Providing liquidity will increase the reserves of both tokens, while also increa
 
 ### Can liquidity be removed at any time?
 
-Liquidity positions can be burned at any time, removing the underlying tokens from the pool and tranferring them to a desired `recipient`.
+Liquidity positions can be burned at any time, removing the underlying tokens from the pool and transferring them to a desired `recipient`.
 

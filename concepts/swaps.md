@@ -6,7 +6,7 @@ description: High level overview of swapping between risky and stable tokens in 
 
 ### Two token pools and a way to swap between them
 
-Primitive V2 Pools have two tokens, a risky and stable. The core smart contract exposes a low level `swap` call, allowing the exchange between the two tokens as long as the _**trading invariant** _is preserved.
+Primitive Pools have two tokens, which should be a risky asset and stable asset. The core smart contract exposes a low level `swap` call, allowing the exchange between the two tokens as long as the _**trading invariant** _is preserved.
 
 Learn more about the trading invariant in the research page:
 

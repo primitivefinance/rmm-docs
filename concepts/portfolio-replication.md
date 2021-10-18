@@ -6,29 +6,31 @@ description: Conceptual overview of RMMs
 
 #### Primitive Protocol is a series of Replicating Market Makers: AMMs whose portfolio value matches a target payoff.
 
-With the launch of Primitive's first RMM, "RMM-01", any user can provide liquidity to get an liquidity token with a payoff matching a covered call. 
+With the launch of Primitive's first RMM, "RMM-01", any user can provide liquidity to get a liquidity token with a payoff matching a covered call. 
 
 The RMM uses a trading rule between two assets, such that the optimal trade is always re-balancing the liquidity position to match a covered call payoff. This allows swaps between the pair, like any other AMM.
 
 ### Portfolios
 
-A portfolio is a composition of multiple assets packaged into a single position. For example, Uniswap protocol liquidity positions (LPs) are a portfolio of two assets with equal weights of 50% . Balancer protocol LPs can have multiple tokens, with different weight denominations (% value of the portfolio).
+A portfolio is a composition of multiple assets packaged into a single position. For example, Uniswap protocol liquidity positions (LPs) are a portfolio of two assets with equal weights of 50%. Balancer protocol LPs can have multiple tokens, with different weight denominations (% value of the portfolio).
 
 ### Value of Portfolios
 
-The value of an Uniswap LP is dependent on the value of its underlying assets and their performance over time. When the value of one asset with respect to the other asset changes, the portfolio must be rebalanced such that the composition of value is equally 50%/50% in each asset. This reblancing occurs by actors called "arbitrageurs" who put one asset in and take another asset out, as to maintain the pool composition to equal 50%/50% value.
+The value of an Uniswap LP is dependent on the value of its underlying assets and their performance over time. When the value of one asset with respect to the other asset changes, the portfolio must be rebalanced such that the composition of value is equally 50%/50% in each asset. This reblancing occurs by external actors called "arbitrageurs" who put one asset in and take another asset out, as to maintain the pool composition to equal 50%/50% value.
 
 ### Rebalancing
 
-When the rebalance occurs, whoever made the trade will have paid a trading fee. This trading fee is earned by all the liquidity providers of the pool. Therefore, as more trades (rebalancing) occurs, their portfolio value will grow over time.
+When the rebalance occurs, whoever made the trade will have paid a trading fee. This trading fee is earned by all the liquidity providers of the pool. Therefore, as more trades (rebalancing) occurs, their portfolio value will grow over time. Different fees are charged in the different AMM protocols. RMM-01 has a static 0.15% fee for all swaps.
 
 ### Replication
 
-Portfolio Replication is when a portfolio _targets a value_, using a composition of multiple assets and arbitrageurs. This targeting should occur in infinitesimal timesteps, where the portfolio value matches the theoretical value it tracks at every point of time.
+> In [mathematical finance](https://en.wikipedia.org/wiki/Mathematical_finance), a **replicating portfolio** for a given asset or series of cash flows is a [portfolio](https://en.wikipedia.org/wiki/Portfolio_\(finance\)) of assets with the same properties (especially cash flows). This is meant in two distinct senses: **static replication**, where the portfolio has the same cash flows as the reference asset (and no changes need to be made to maintain this), and **dynamic replication**, where the portfolio does not have the same cash flows, but has the same "[Greeks](https://en.wikipedia.org/wiki/Greeks_\(finance\))" as the reference asset, meaning that for small (properly, [infinitesimal](https://en.wikipedia.org/wiki/Infinitesimal)) changes to underlying market parameters, the price of the asset and the price of the portfolio change in the same way. Dynamic replication requires continual adjustment, as the asset and portfolio are only assumed to behave similarly at a single point (mathematically, their partial derivatives are equal at a single point).
+>
+> * [https://en.wikipedia.org/wiki/Replicating_portfolio](https://en.wikipedia.org/wiki/Replicating_portfolio)
 
 ### Replicating Market Makers
 
-An RMM uses a specialized rule (like the constant product rule that Uniswap uses: xy=k) such that the portfolio is always being rebalanced in a way that it matches a desired payoff. **TL:DR:** Arbitrageurs only make a profit when they get the portfolio close to the desired payoff.
+An RMM uses a specialized rule such that the portfolio is always being rebalanced in a way that it matches a desired payoff. **TL:DR:** Arbitrageurs only make a profit when they move the portfolio closer to the desired payoff.
 
 ### What payoffs does the Primitive RMM have?
 
@@ -38,7 +40,7 @@ The first payoff, implemented in RMM-01, is a covered call: a portfolio composed
 
 ### Why use an RMM?
 
-An RMM can be used to create hedges against other positions, like options or other liquidity positions. The Primitive RMM allows curves to be created with several different parameters, enabling more customized hedges. The caveat: if theres no arbitrageurs, the payoff won't match. For this reason, smaller size hedges would be better off contributing to a large pool. Larger size hedges do have the luxury of creating what they want, as long as the size of the pool is large enough to motivate arbitrageurs.
+An RMM can be used to create hedges against other positions, like options or other liquidity positions. The Primitive RMM allows curves to be created with several different parameters, enabling more customized hedges. The caveat: if there are no arbitrageurs, the payoff won't match. For this reason, smaller size hedges would be better off contributing to a large pool. Larger size hedges do have the luxury of creating what they want, as long as the size of the pool is large enough to motivate arbitrageurs.
 
 ### Why is portfolio replication used?
 
@@ -46,7 +48,7 @@ Replication is commonly used to construct hedges, to counteract the exposure of 
 
 ### Why use AMMs?
 
-In a compute constrained environment, like Ethereum, high-touch systems like orderbooks become increasingly costly to maintain. AMMs excel in an environment like Ethereum because they imply where orders sit and at what price, through the use of a simple mathematical trading rule.
+In a compute constrained environment, like Ethereum, high-touch systems like order-books become increasingly costly to maintain. AMMs excel in an environment like Ethereum because they imply where orders sit and at what price, through the use of a simple mathematical trading rule.
 
 In addition, AMM positions are instantly convertible into the underlying tokens, there is no custody or credit risk, and they are often used as building blocks in other protocols. Fundamentally, AMMs represent a common standard familiar to users, developers, and DeFi infrastructure, therefore making specialized AMMs a useful lego.
 

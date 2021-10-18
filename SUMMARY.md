@@ -4,7 +4,7 @@
 
 ## Using Primitive
 
-* [Overview: RMM-01](using-primitive/overview-rmm-01.md)
+* [Provide Liquidity, Earn Fees](using-primitive/overview-rmm-01.md)
 * [Using the app](using-primitive/using-the-app/README.md)
   * [Using the app hosted on IPFS](using-primitive/using-the-app/using-the-app-hosted-on-ipfs.md)
   * [Using the app locally](using-primitive/using-the-app/using-the-app-locally.md)
