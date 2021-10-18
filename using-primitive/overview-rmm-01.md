@@ -4,9 +4,9 @@ description: 'A brief review of RMM-01: Primitive''s first specialized pool.'
 
 # Provide Liquidity, Earn Fees
 
-Liquidity provided to the Protocol's pools earns trading fees on a pro-rata basis, which is reinvested back into the pool continuously. Each pool has a finite lifetime, and once it has expired no more trading fees will accrue to liquidity providers. 
+Liquidity provided to the Protocol's pools earns trading fees on a pro-rata basis, which is reinvested back into the pool continuously. Each pool has a finite lifetime, and once it has expired no more trading fees will accrue to liquidity providers.&#x20;
 
-Additionally, the composition of these two token pools will change over its lifetime. This composition is designed to target the payoff of a covered call, such that by the pool's maturity and if the price of the risky token is above the strike price of the pool, each liquidity token is 100% stablecoins. If the price of the risky token is above the strike price, the pool will most likely be composed 100% of the risky token.
+Additionally, the composition of these two token pools will change over its lifetime. This composition is designed to target the payoff of a Black-Scholes covered call. This means that by the pool's maturity, if the price of the risky token is above the strike price of the pool, each liquidity token is 100% stablecoins. If the price of the risky token is below the strike price, the pool will most likely be composed 100% of the risky token.
 
 A pool does not check the risky asset price explicitly, instead this strike price <> actual price check occurs through the economic incentives built into the AMM. For this reason, the Protocol does not rely on an external oracle system, allowing it to scaling to any token pair with ease.
 
@@ -14,17 +14,21 @@ Each pair and its pools are permissionlessly deployable by anyone.
 
 ## Primitive "RMM-01"
 
-**RMM-01 is a liquidity token of the pool that replicates a **[**covered call**](https://www.investopedia.com/terms/c/coveredcall.asp)** payoff.**
+**RMM-01 is the liquidity token of a pool that replicates a **[**covered call**](https://www.investopedia.com/terms/c/coveredcall.asp)** payoff.**
 
-Anyone can provide the pool's tokens and receive a liquidity position in return which matches that specific pool's calibration. 
+Anyone can provide the pool's tokens and receive a liquidity position in return which matches that specific pool's calibration.&#x20;
 
 ### How does it work?
 
-Each pool achieves its target value by making itself an attractive opportunity for arbitrageurs to trade between the pool's tokens. This is achieved using a _trading function _derived from the Black-scholes Merton model for pricing options. 
+Each pool achieves its target value by making itself an attractive opportunity for arbitrageurs to trade between the pool's tokens. This is achieved using a _trading function _derived from the Black-Scholes Merton model for pricing options.&#x20;
 
 ![Primitive RMM-01 Trading Function](../.gitbook/assets/rmm01.png)
 
-A trading function is a rule that governs an AMM's swaps between tokens, e.g. the constant product trading function used by Uniswap: xy=k.
+A trading function is a rule that governs an AMM's swaps between tokens, e.g. the constant product trading function used by Uniswap:
+
+$$
+x\times y=k
+$$
 
 ### What are the fees for liquidity providers?
 
@@ -32,9 +36,9 @@ When swaps occur between the pool's tokens, a static fee of 0.15% is charged and
 
 ### What are the risks?
 
-#### Target payoff is not successfully replicated
+#### Target payoff is not replicated exactly
 
-These pools do not promise a payoff, but do have a high probability of replicating it within a margin of error. Therefore, there is a risk that liquidity providers do not get the expected payoff, which makes it very different from the promise of an option contract.
+These pools do not promise a payoff, but do have a high probability of replicating it within an expected margin of error. Therefore, there is a risk that liquidity providers do not get the expected payoff, which makes it very different from the promise of an option contract.
 
 #### No arbitrage/swaps occur
 
@@ -46,7 +50,7 @@ Network [downtime](https://thedefiant.io/arbitrum-outage/) can introduce instabi
 
 #### Smart contracts could have a bug
 
-The smart contracts have been audited by several professional firms, however, not all bugs can be discovered in code. Knowing this, proceed to use the protocol with caution and prepare for the event of loss of funds by covering your position using the coverage providers who support the Protocol. 
+The smart contracts have been audited by several professional firms, however, not all bugs can be discovered in code. Knowing this, proceed to use the protocol with caution and prepare for the event of loss of funds by covering your position using the coverage providers who support the Protocol.&#x20;
 
 #### Interface code could have a bug
 

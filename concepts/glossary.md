@@ -4,11 +4,11 @@ description: Definitions of the sometimes verbose terminology.
 
 # Glossary
 
-AMM: Automated Market Maker. A rule which defines the inputs and outputs of exchanging one or more items.
+AMM: Automated Market Maker. A rule which defines the inputs and outputs of exchanging two or more assets.
 
 Portfolio: Two or more assets composed under the same instrument.
 
-Replication: Mimicking a value of another singular instrument at infinitesmal points in time by using a portfolio.
+Replication: Mimicking the value of another singular instrument at infinitesimal points in time by using a portfolio.
 
 Curve: Parameters mapped to a `poolId` in the Engine.
 
