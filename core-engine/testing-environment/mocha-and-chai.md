@@ -16,7 +16,6 @@ declare module 'mocha' {
   export interface Context {
     signers: Wallet[]
     contracts: Contracts
-    configs: Configs
   }
 }
 ```
@@ -27,8 +26,6 @@ These new items are accessible in our tests through using `this`. These must be 
 `signers`: Wallets which are used to send transactions on the network.
 
 `contracts`: Deployed contracts to use in the tests
-
-`configs`: Primitive AMM curve configurations, unique to Primitive testing environment
 
 
 

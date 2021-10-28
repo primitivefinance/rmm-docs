@@ -4,11 +4,11 @@ description: 'A brief review of RMM-01: Primitive''s first specialized pool.'
 
 # Provide Liquidity, Earn Fees
 
-Liquidity provided to the Protocol's pools earns trading fees on a pro-rata basis, which is reinvested back into the pool continuously. Each pool has a finite lifetime, and once it has expired no more trading fees will accrue to liquidity providers.&#x20;
+Liquidity provided to the Protocol's pools earns trading fees on a pro-rata basis, which is re-invested back into the pool continuously. Each pool has a finite lifetime, and once it has expired no more trading fees will accrue to liquidity providers.&#x20;
 
-Additionally, the composition of these two token pools will change over its lifetime. This composition is designed to target the payoff of a Black-Scholes covered call. This means that by the pool's maturity, if the price of the risky token is above the strike price of the pool, each liquidity token is 100% stablecoins. If the price of the risky token is below the strike price, the pool will most likely be composed 100% of the risky token.
+Additionally, the composition of these two token pools will change over its lifetime. This composition is designed to target the payoff of a Black-Scholes covered call, a portfolio of the underlying spot asset and a short call. This means that by the pool's maturity, if the price of the risky token, on a reference market, is above the strike price of the pool, each liquidity token is 100% stablecoins. If the price of the risky token is below the strike price, the pool will most likely be composed 100% of the risky token.
 
-A pool does not check the risky asset price explicitly, instead this strike price <> actual price check occurs through the economic incentives built into the AMM. For this reason, the Protocol does not rely on an external oracle system, allowing it to scaling to any token pair with ease.
+A pool does not check the risky asset price explicitly, instead this strike price <> reference market price check occurs through the economic incentives built into the AMM. For this reason, the Protocol does not rely on an external oracle system, allowing it to scaling to any token pair with ease.
 
 Each pair and its pools are permissionlessly deployable by anyone.
 
@@ -20,7 +20,7 @@ Anyone can provide the pool's tokens and receive a liquidity position in return 
 
 ### How does it work?
 
-Each pool achieves its target value by making itself an attractive opportunity for arbitrageurs to trade between the pool's tokens. This is achieved using a _trading function _derived from the Black-Scholes Merton model for pricing options.&#x20;
+Each pool achieves its target value by making itself an attractive opportunity for arbitrageurs to trade between the pool's tokens. This is achieved using a _trading function _derived from the Black-Scholes-Merton model for pricing options.&#x20;
 
 ![Primitive RMM-01 Trading Function](../.gitbook/assets/rmm01.png)
 
@@ -32,7 +32,11 @@ $$
 
 ### What are the fees for liquidity providers?
 
-When swaps occur between the pool's tokens, a static fee of 0.15% is charged and reinvested into the pool, compensating the liquidity providers for their supplied capital.
+On pool creation, the swap fee can be effectively selected by the pool creator. This chosen fee remains static over the lifetime of the pool.&#x20;
+
+When swaps occur between the pool's tokens, the pool's fee is charged on the swap amount in, effectively re-investing the fee into the pool. This compensates the liquidity providers for their supplied capital.
+
+The Protocol does not take any portion of these fees.
 
 ### What are the risks?
 
@@ -42,7 +46,7 @@ These pools do not promise a payoff, but do have a high probability of replicati
 
 #### No arbitrage/swaps occur
 
-For fees to be generated, swaps must occur, but there is the chance this does not happen as often as it should. This could be due to not enough liquidity in the pool, high gas prices, or even a lack of active arbitrageurs.
+For fees to be generated, swaps must occur, but there is the chance this does not happen as often as it should. This could be due to not enough liquidity in the pool, high gas prices, or even a lack of active arbitrageurs / traders.
 
 #### Network goes offline
 
@@ -50,13 +54,13 @@ Network [downtime](https://thedefiant.io/arbitrum-outage/) can introduce instabi
 
 #### Smart contracts could have a bug
 
-The smart contracts have been audited by several professional firms, however, not all bugs can be discovered in code. Knowing this, proceed to use the protocol with caution and prepare for the event of loss of funds by covering your position using the coverage providers who support the Protocol.&#x20;
+The smart contracts have been audited by several professional firms, however, not all bugs can be discovered in the code. Knowing this, proceed to use the protocol with caution and prepare for the event of loss of funds by covering your position using the coverage providers who support the Protocol.&#x20;
 
 #### Interface code could have a bug
 
 Not only the smart contracts, but all the software should be considered "beta" until it has been sufficiently testing over a long period of time, by many users.
 
-If you have security concerns, or found a bug, visit our [$250,000 bug bounty on Immunefi](https://immunefi.com/bounty/primitive/).
+If you have security concerns, or discovered a bug, visit our [$250,000 bug bounty on Immunefi](https://immunefi.com/bounty/primitive/).
 
 ## Protocol Overview
 

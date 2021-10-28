@@ -4,15 +4,15 @@ description: Overview of Liquidity provision and Liquidity positions
 
 # Providing Liquidity
 
-Primitive Pools are composed of the risky and stable tokens which can be provided as liquidity. Each pool is an individual "curve". 
+Primitive Pools are composed of the risky and stable tokens which can be provided as liquidity. Each pool is an individual "curve".&#x20;
 
-For RMM-01, each curve is calibrated using the parameters `strike` `volatility` and `maturity`.
+For RMM-01, each curve is calibrated using the parameters `strike` `volatility` `maturity` and `gamma`.
 
 Pools can be deployed permissionlessly for any token pair through the Primitive Factory contract.
 
 ### Why provide liquidity? Do I earn rewards?
 
-Supplying tokens to the chosen curve will give you a position in a portfolio that tracks the value of the covered call, such that when liquidity is redeemed it will be valued at the value of the covered call its tracking. The swap fees generated are distrubtued pro-rata to the liquidity providers by being reinvested into the pool.
+Supplying tokens to the chosen curve will give you a position in a portfolio that tracks the value of the covered call, such that when liquidity is redeemed it will be valued at the value of the covered call its tracking. The swap fees generated are distributed pro-rata to the liquidity providers by being re-invested into the pool.
 
 ### Where does yield come from?
 

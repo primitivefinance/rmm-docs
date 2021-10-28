@@ -13,9 +13,9 @@ The Engine is a low-level contract with the primary tasks of:
 * Accept deposits into an internal balance to optimize gas.
 * Allow swaps between the two tokens defined in the Engine, using the trading function.
 
-### Underlying Token, Strike Token, Strike Price, Volatility, and Maturity
+### Underlying Token, Strike Token, Strike Price, Volatility, Maturity, and Swap Fee
 
-The protocol has many parameters to choose from when creating RMM-01 pools: strike price, volatilities, maturities, and tokens. The structure to support these different parameters in a permissionless way is implemented in two contracts: Factory and Engine.
+The protocol has many parameters to choose from when creating RMM-01 pools: strike price, volatilities, maturities, swap fees, and tokens. The structure to support these different parameters in a permissionless way is implemented in two contracts: the Factory and Engine.
 
 ### Choose your tokens
 
@@ -25,15 +25,15 @@ A token pair remains a token pair throughout its life, and that is why these add
 
 ### Choose Pool Parameters
 
-The next variables, strike, volatility, and maturity, are _curve parameters, _called a `Calibration`, and they are chosen when a new pool is created. New pools can be created in the Engine contract, with reasonable limits to which parameters are used. On pool creation, an initial amount of liquidity must be minted which requires the `msg.sender` to pay the Engine's risky and stable tokens as the first provided liquidity.
+The next variables, strike, volatility, maturity, and gamma, are _curve parameters, _called a `Calibration`, and they are chosen when a new pool is created. New pools can be created in the Engine contract, with reasonable limits to which parameters are used. On pool creation, an initial amount of liquidity must be minted which requires the `msg.sender` to pay the Engine's risky and stable tokens as the first provided liquidity.
 
 ## What can I do to interact with the curves?
 
 ### Allocate Liquidity to the Curve
 
-Once a curve is available, its `poolId` is a hash of the Engine address, and its curve parameters. Tokens can be supplied to the curve and in exchange a `liquidity position` is created. Liquidity scales linearly with the units of replication. When the pool is initially created, it is made such that `delLiquidity` units of liquidity corresponds to a `delLiquidity` units of replication (e.g. 1 `delLiquidity` = 1 covered call payoff). 
+Once a curve is available, its `poolId` is a hash of the Engine address, and its curve parameters. Tokens can be supplied to the curve and in exchange a `liquidity position` is created. Liquidity scales linearly with the units of replication. When the pool is initially created, it is made such that `delLiquidity` units of liquidity corresponds to a `delLiquidity` units of replication (e.g. 1 `delLiquidity` = 1 covered call payoff).&#x20;
 
-Therefore, adding liquidity multiplies that by a linear amount, so providing 2 liquidity is replicating 2 covered call payoffs, etc...
+Therefore, adding liquidity multiplies that by a linear amount, so providing two liquidity is replicating two covered call payoffs, etc...
 
 ### Liquidity Position
 

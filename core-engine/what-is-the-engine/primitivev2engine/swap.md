@@ -6,7 +6,7 @@ description: Technical write-up of the swap function
 
 The swap function has seven parameters: a pool to trade in, the direction of the trade, the amount to swap in, the amount to get out, a choice of paying to pay using internal balances or being paid to an internal balance, a `recipient` that receives the output tokens, and an arbitrary `data` parameter that is passed in the callback function.
 
-During the swap, if the internal balances are not being used to pay the balance, then the swap will make a call to the `msg.sender` asking for payment of the token being sent in using `IPrimitiveSwapCallback.swapCallback(delRisky, delStable, data)`. Therefore, this scenario must be triggered by a smart contract only, or it will fail. 
+During the swap, if the internal balances are not being used to pay the balance, then the swap will make a call to the `msg.sender` asking for payment of the token being sent in using `IPrimitiveSwapCallback.swapCallback(delRisky, delStable, data)`. Therefore, this scenario must be triggered by a smart contract only, or it will fail.&#x20;
 
 **Important**: An EOA can call the swap function directly (but shouldn't) by passing the parameter `fromMargin` in as true, if they have an internal token balance to pay for the swap.
 
@@ -48,7 +48,7 @@ adjustedStable = (adjustedStable * PRECISION) / reserve.liquidity;
 
 The invariant check is to make sure that immediately before and then after a swap, the invariant grows or stays the same. Since the time until expiry is updated in the swap function, the overall `swap()` call might have a more negative invariant. But this is why we store the invariant in memory _after_ we have updated the time until expiry.
 
-**Important: **Notice how the adjustedRisky reserve is calculated using an amount in with a fee applied. This will have an effect on the invariant, so if there is not enough being swapped in to pay the fee, the invariant check will fail. The state update to the reserves will use the full amount in, as well as the required token payment.
+**Important: **Notice how the adjustedRisky reserve is calculated using an amount in with a fee applied. This will have an effect on the invariant, so if there is not enough being swapped in to pay the fee, the invariant check will fail. The state update to the reserves will use the full amount in, as well as the required token payment. The (1 - fee) component is equal to the pool's `Calibration` `gamma` item, which was selected on pool creation.
 
 ### Step 4: Handle payments
 

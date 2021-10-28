@@ -12,17 +12,19 @@ Whenever a new token pair wants to be created, a new Primitive Engine contract m
 
 ### Pool <> AMM Curve
 
-Each Engine has the ability to create new pools, which use the parameters of a covered call to replicate its payoff. Creating a new pool uses the parameters `strike`, `sigma` (implied volatility), and `maturity` as its arguments. These get stored in the Engine contract and are accessed using a  `poolId`, the hash of the Engine address and the arguments above. 
+Each Engine has the ability to create new pools, which use the parameters of a covered call to replicate its payoff. Creating a new pool uses the parameters `strike`, `sigma` (implied volatility), `maturity` , and `gamma` as its arguments. These get stored in the Engine contract and are accessed using a  `poolId`, the hash of the Engine address and the arguments above.&#x20;
 
 The amount of initial liquidity must also be specified and paid for in the Engine's two tokens. For this reason, only a smart contract is capable of calling the low-level `create` function directly, because the `create` call will call back to the `msg.sender` asking for tokens.
 
 #### Important
 
-The most critical argument during pool creation is `riskyPerLp`. This defines the initial risky token reserves of the pool, and thus determines an implied spot price. If the spot price of the newly created pool is less than the market price, the pool will be arbitraged to match the reference market price. This can be a loss scenario for the initial pool creator.
+The most critical argument during pool creation is `riskyPerLp`. This defines the initial risky token reserves of the pool, and thus determines an implied spot price. If the spot price of the newly created pool is less than the market price, the pool will be arbitraged to match the reference market price. This can be a loss scenario for the initial pool creator. &#x20;
+
+The `riskyPerLp` argument should be equal to `1 - delta`, where `delta` is the delta of the call being replicated. When passed to the smart contract, `riskyPerLp` must have the same decimal places as the `risky` token. The `delta` can be calculated using the `Primitive V2 Math` typescript package, which uses a `spot` price to calculate the change in the option's value with respect to a $1 change in the underlying asset price, all else equal.
 
 ### Why create new pools?
 
-Anyone can create new pools, this makes it good opportunity for anyone to get any covered call payoff they desire. If a pool with desired parameters (e.g. a higher strike price) is not available, a new pool can be created and provided liquidity to. 
+Anyone can create new pools, this makes it good opportunity for anyone to get any covered call payoff they desire. If a pool with desired parameters (e.g. a higher strike price) is not available, a new pool can be created and liquidity can be provided to it.
 
 ### Whats the catch?
 

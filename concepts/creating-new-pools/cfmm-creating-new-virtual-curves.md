@@ -11,8 +11,9 @@ description: Describes the process of creating virtual curves.
 ```javascript
     /// @notice             Initializes a curve with parameters in the `settings` storage mapping in the Engine
     /// @param  strike      Strike price of the pool to calibrate to, with the same decimals as the stable token
-    /// @param  sigma       Volatility to calibrate to as an unsigned 256-bit integer w/ precision of 1e4, 10000 = 100%
+    /// @param  sigma       Implied Volatility to calibrate to as an unsigned 32-bit integer w/ precision of 1e4, 10000 = 100%
     /// @param  maturity    Maturity timestamp of the pool, in seconds
+    /// @param  gamma       Multiplied against swap in amounts to apply fee, equal to 1 - fee %, an unsigned 32-bit integer, w/ precision of 1e4, 10000 = 100%
     /// @param  riskyPerLp  Risky reserve per liq. with risky decimals, = 1 - N(d1), d1 = (ln(S/K)+(r*sigma^2/2))/sigma*sqrt(tau)
     /// @param  delLiquidity Amount of liquidity to allocate to the curve, wei value with 18 decimals of precision
     /// @param  data        Arbitrary data that is passed to the createCallback function
@@ -21,8 +22,9 @@ description: Describes the process of creating virtual curves.
     /// delStable           Total amount of stable tokens provided to reserves
     function create(
         uint256 strike,
-        uint64 sigma,
+        uint32 sigma,
         uint32 maturity,
+        uint32 gamma,
         uint256 riskyPerLp,
         uint256 delLiquidity,
         bytes calldata data
@@ -37,7 +39,7 @@ description: Describes the process of creating virtual curves.
 
 The create function is responsible for both:
 
-1\. Storing the parameters of the curve in the `settings` state variable, using the keccak256 hash of the parameters as the key
+1\. Storing the parameters of the curve in the `calibrations` mapping, a state variable, using the keccak256 hash of the parameters as the key.
 
 2\. Initializing the reserves state and balance with the correct amount of tokens (more on this in the next section).
 
