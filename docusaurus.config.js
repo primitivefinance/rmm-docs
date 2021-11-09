@@ -12,7 +12,7 @@ const config = {
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
-	favicon: 'img/favicon.ico',
+	favicon: 'img/primitive-logo.png',
 	organizationName: 'PrimitiveFinance', // Usually your GitHub org/user name.
 	projectName: 'Primitive V2 Docs', // Usually your repo name.
 
