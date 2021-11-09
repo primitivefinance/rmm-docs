@@ -22,7 +22,7 @@ const config = {
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
 				docs: {
-					path: 'concepts',
+					path: 'docs/concepts',
 					routeBasePath: 'concepts/',
 					sidebarPath: require.resolve('./sidebars.js'),
 				},
@@ -42,7 +42,7 @@ const config = {
 		[
 			"@docusaurus/plugin-content-docs", {
 				id: 'core-engine',
-				path: 'core-engine',
+				path: 'docs/core-engine',
 				routeBasePath:'core-engine/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
@@ -50,7 +50,7 @@ const config = {
 		[
 			"@docusaurus/plugin-content-docs", {
 				id: 'using-primitive',
-				path: 'using-primitive',
+				path: 'docs/using-primitive',
 				routeBasePath:'guides/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
