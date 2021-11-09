@@ -74,7 +74,7 @@ const config = {
 						position: 'left',
 						label: 'Concepts',
 					},
-					{ to: '/core-engine/periphery/primitivev2house', label: 'Core', position: 'left', },
+					{ to: '/core-engine/what-is-the-engine/README', label: 'Core', position: 'left', },
 					{
 						label: 'Using Primitive',
 						to: '/guides/using-the-app/README',
@@ -94,7 +94,7 @@ const config = {
 							},
 							{
 								label: 'Core',
-								to: '/core-engine/periphery/primitivev2house',
+								to: '/core-engine/what-is-the-engine/README',
 							},
 							{
 								label: 'Guides',
