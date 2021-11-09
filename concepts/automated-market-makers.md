@@ -1,5 +1,7 @@
 ---
+title: AMM Overview
 description: Conceptual Overview of AMMs
+sidebar_position: 1 
 ---
 
 # Automated Market Makers

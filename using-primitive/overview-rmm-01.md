@@ -1,5 +1,6 @@
 ---
 description: 'A brief review of RMM-01: Primitive''s first specialized pool.'
+sidebar_position: 2
 ---
 
 # Provide Liquidity, Earn Fees
@@ -8,7 +9,7 @@ Liquidity provided to the Protocol's pools earns trading fees on a pro-rata basi
 
 Additionally, the composition of these two token pools will change over its lifetime. This composition is designed to target the payoff of a Black-Scholes covered call. This means that by the pool's maturity, if the price of the risky token is above the strike price of the pool, each liquidity token is 100% stablecoins. If the price of the risky token is below the strike price, the pool will most likely be composed 100% of the risky token.
 
-A pool does not check the risky asset price explicitly, instead this strike price <> actual price check occurs through the economic incentives built into the AMM. For this reason, the Protocol does not rely on an external oracle system, allowing it to scaling to any token pair with ease.
+A pool does not check the risky asset price explicitly, instead this strike price > actual price check occurs through the economic incentives built into the AMM. For this reason, the Protocol does not rely on an external oracle system, allowing it to scaling to any token pair with ease.
 
 Each pair and its pools are permissionlessly deployable by anyone.
 
