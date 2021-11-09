@@ -6,11 +6,11 @@ description: Pool and Engine Creation
 
 Two types of creation occurs in the Primitive Protocol for RMM-01: new token pairs (Engines), and new pools (Curves).
 
-### Primitive Engine | Token Pair
+### Primitive Engine <\> Token Pair
 
 Whenever a new token pair wants to be created, a new Primitive Engine contract must be deployed from the Primitive Factory. The Engine allows pools to be created for that token pair.
 
-### Pool | AMM Curve
+### Pool <\> AMM Curve
 
 Each Engine has the ability to create new pools, which use the parameters of a covered call to replicate its payoff. Creating a new pool uses the parameters `strike`, `sigma` (implied volatility), `maturity` , and `gamma` as its arguments. These get stored in the Engine contract and are accessed using a  `poolId`, the hash of the Engine address and the arguments above.&#x20;
 

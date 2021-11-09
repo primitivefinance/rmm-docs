@@ -86,19 +86,11 @@ const config = {
 				style: 'dark',
 				links: [
 					{
-						title: 'Docs',
+						title: 'Developers',
 						items: [
 							{
-								label: 'Concepts',
-								to: '/concepts/automated-market-makers',
-							},
-							{
-								label: 'Core',
-								to: '/core-engine/what-is-the-engine/README',
-							},
-							{
-								label: 'Guides',
-								to: '/guides/using-the-app/README',
+								label: 'Whitepaper',
+								to: 'https://primitive.finance/whitepaper-rmm-01.pdf',
 							},
 						],
 					},
