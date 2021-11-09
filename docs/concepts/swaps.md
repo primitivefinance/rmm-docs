@@ -17,7 +17,7 @@ Learn more about the trading invariant in the research page:
 ### Source Code: Low-level Swap 
 
 {% content-ref url="../core-engine/what-is-the-engine/primitivev2engine/swap.md" %}
-[swap.md](../core-engine/what-is-the-engine/primitivev2engine/swap.md)
+[swap.md](/core-engine/what-is-the-engine/primitivev2engine/swap)
 {% endcontent-ref %}
 
 
