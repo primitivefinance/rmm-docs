@@ -23,7 +23,7 @@ Anyone can provide the pool's tokens and receive a liquidity position in return 
 
 Each pool achieves its target value by making itself an attractive opportunity for arbitrageurs to trade between the pool's tokens. This is achieved using a _trading function _derived from the Black-Scholes Merton model for pricing options.&#x20;
 
-![Primitive RMM-01 Trading Function](../.gitbook/assets/rmm01.png)
+![Primitive RMM-01 Trading Function](/img/rmm01.png)
 
 A trading function is a rule that governs an AMM's swaps between tokens, e.g. the constant product trading function used by Uniswap:
 
