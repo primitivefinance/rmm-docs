@@ -14,7 +14,7 @@ const config = {
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/primitive-logo.png',
 	organizationName: 'PrimitiveFinance', // Usually your GitHub org/user name.
-	projectName: 'Primitive V2 Docs', // Usually your repo name.
+	projectName: 'Primitive Protocol Docs', // Usually your repo name.
 
 	presets: [
 		[
@@ -30,7 +30,7 @@ const config = {
 					showReadingTime: true,
 					// Please change this to your repo.
 					editUrl:
-						'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+						'https://github.com/primitivefinance/rmm-docs',
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
@@ -41,17 +41,17 @@ const config = {
 	plugins: [
 		[
 			"@docusaurus/plugin-content-docs", {
-				id: 'core-engine',
-				path: 'docs/core-engine',
-				routeBasePath:'core-engine/',
+				id: 'protocol',
+				path: 'docs/protocol',
+				routeBasePath:'protocol/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
 		],
 		[
 			"@docusaurus/plugin-content-docs", {
-				id: 'using-primitive',
-				path: 'docs/using-primitive',
-				routeBasePath:'guides/',
+				id: 'ecosystem',
+				path: 'docs/ecosystem',
+				routeBasePath:'ecosystem/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
 		],
@@ -70,14 +70,14 @@ const config = {
 				items: [
 					{
 						type: 'doc',
-						docId: 'automated-market-makers',
+						docId: 'overview',
 						position: 'left',
 						label: 'Concepts',
 					},
-					{ to: '/core-engine/what-is-the-engine/README', label: 'Core', position: 'left', },
+					{ to: '/protocol/overview', label: 'Protocol', position: 'left', },
 					{
-						label: 'Using Primitive',
-						to: '/guides/using-the-app/README',
+						label: 'Ecosystem',
+						to: '/ecosystem/overview',
 						position: 'left',
 					},
 				],
@@ -92,6 +92,10 @@ const config = {
 								label: 'Whitepaper',
 								to: 'https://primitive.finance/whitepaper-rmm-01.pdf',
 							},
+							{
+								label: 'GitHub',
+								href: 'https://github.com/primitivefinance/',
+							},
 						],
 					},
 					{
@@ -99,7 +103,7 @@ const config = {
 						items: [
 							{
 								label: 'Discord',
-								href: 'https://discord.gg/JBM6APT',
+								href: 'https://discord.gg/rzRwJ4K',
 							},
 							{
 								label: 'Twitter',
@@ -108,16 +112,16 @@ const config = {
 						],
 					},
 					{
-						title: 'More',
+						title: 'Products',
 						items: [
 							{
-								label: 'GitHub',
-								href: 'https://github.com/primitivefinance/',
+								label: 'App',
+								href: 'https://app.primitive.finance/',
 							},
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()}  Some copyright shit . Built with Docusaurus.`,
+				copyright: `Copyright © ${new Date().getFullYear()} Primitive.`,
 			},
 			prism: {
 				theme: lightCodeTheme,

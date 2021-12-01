@@ -6,30 +6,30 @@ const FeatureList = [
 	{
 		title: 'Concepts',
 		Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
-		href: '/concepts/automated-market-makers',
+		href: '/concepts/overview',
 		description: (
 			<>
-				Concepts description
+				Concepts to Learn
 			</>
 		),
 	},
 	{
-		title: 'Core Engine',
+		title: 'Protocol',
 		Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
-		href: '/core-engine/periphery/README',
+		href: '/protocol/overview',
 		description: (
 			<>
-				Core description
+				Technical Specification
 			</>
 		),
 	},
 	{
-		title: 'Guides',
-		href: '/guides/using-the-app/README',
+		title: 'Ecosystem',
+		href: '/ecosystem/overview',
 		Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
 		description: (
 			<>
-				Guide description
+				Ecosystem & Community
 			</>
 		),
 	},
