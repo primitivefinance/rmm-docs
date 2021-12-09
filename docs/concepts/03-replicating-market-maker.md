@@ -34,7 +34,7 @@ An RMM uses a specialized rule such that the portfolio is always being rebalance
 
 ### What payoffs does the Primitive RMM have?
 
-The first payoff, implemented in RMM-01, is a covered call: a portfolio composed of 1 unit of underlying asset (like Ether) at `maturity` if the price of the asset is above a `strike price`, or composed of `strike price` units of the stable asset (like USDC) if the price of the asset is below the `strike price`.
+The first payoff, implemented in RMM-01, is a covered call: a portfolio composed of 1 unit of underlying asset (like Ether) at `maturity` if the price of the asset is below a `strike price`, or composed of `strike price` units of the stable asset (like USDC) if the price of the asset is above the `strike price`.
 
 ![Covered Call Payoff Graph. Investopedia.com.](/img/image.png)
 
