@@ -133,7 +133,7 @@ function wrap(uint256 value) external payable
 
 
 
-## Events
+## Errors
 
 ### BalanceTooLowError
 

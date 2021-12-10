@@ -109,7 +109,3 @@ function selfPermitIfNecessary(address token, uint256 value, uint256 deadline, u
 | v | uint8 | Must produce valid secp256k1 signature from the holder along with `r` and `s`
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s`
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v`
-
-
-
-

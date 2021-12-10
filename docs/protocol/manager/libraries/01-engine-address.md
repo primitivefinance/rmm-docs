@@ -10,7 +10,7 @@ Small library to compute the address of the engines
 
 
 
-## Events
+## Errors
 
 ### EngineNotDeployedError
 

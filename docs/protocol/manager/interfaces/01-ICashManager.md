@@ -79,7 +79,7 @@ function wrap(uint256 value) external payable
 
 
 
-## Events
+## Errors
 
 ### BalanceTooLowError
 
@@ -106,9 +106,3 @@ Thrown when the sender is not WETH
 ```solidity title="Solidity"
 error OnlyWETHError()
 ```
-
-
-
-
-
-

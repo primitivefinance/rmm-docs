@@ -150,7 +150,7 @@ event Withdraw(address indexed payer, address indexed recipient, address indexed
 
 
 
-## Events
+## Errors
 
 ### ZeroDelError
 
@@ -159,9 +159,3 @@ Thrown when trying to deposit or withdraw 0 risky and stable
 ```solidity title="Solidity"
 error ZeroDelError()
 ```
-
-
-
-
-
-

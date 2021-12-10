@@ -10,7 +10,7 @@ Utils functions to transfer tokens and ETH
 
 
 
-## Events
+## Errors
 
 ### ApproveError
 

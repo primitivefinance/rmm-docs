@@ -80,7 +80,7 @@ event Swap(address indexed payer, address recipient, address indexed engine, byt
 
 
 
-## Events
+## Errors
 
 ### DeadlineReachedError
 
@@ -89,9 +89,3 @@ Thrown when the deadline is reached
 ```solidity title="Solidity"
 error DeadlineReachedError()
 ```
-
-
-
-
-
-

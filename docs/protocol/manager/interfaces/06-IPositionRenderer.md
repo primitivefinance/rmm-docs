@@ -33,7 +33,3 @@ function render(address engine, uint256 tokenId) external view returns (string)
 | Name | Type | Description |
 |---|---|---|
 | _0 | string | SVG image as a string
-
-
-
-

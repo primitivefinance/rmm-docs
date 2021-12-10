@@ -35,7 +35,3 @@ function multicall(bytes[] data) external payable returns (bytes[] results)
 | Name | Type | Description |
 |---|---|---|
 | results | bytes[] |  Results from each of the calls passed in via data
-
-
-
-

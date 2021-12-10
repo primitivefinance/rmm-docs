@@ -67,7 +67,7 @@ function positionRenderer() external view returns (address)
 
 
 
-## Events
+## Errors
 
 ### NotEngineError
 
@@ -88,9 +88,3 @@ Thrown when the constructor parameters are wrong
 ```solidity title="Solidity"
 error WrongConstructorParametersError()
 ```
-
-
-
-
-
-

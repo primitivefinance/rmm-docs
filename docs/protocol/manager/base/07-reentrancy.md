@@ -10,7 +10,7 @@ Prevents reentrancy
 
 
 
-## Events
+## Errors
 
 ### LockedError
 

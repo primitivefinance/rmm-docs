@@ -67,7 +67,7 @@ function positionRenderer() external view returns (address)
 
 
 
-## Events
+## Errors
 
 ### LockedError
 

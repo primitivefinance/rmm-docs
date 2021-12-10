@@ -997,7 +997,7 @@ event Withdraw(address indexed payer, address indexed recipient, address indexed
 
 
 
-## Events
+## Errors
 
 ### BalanceTooLowError
 

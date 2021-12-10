@@ -412,7 +412,7 @@ event URI(string value, uint256 indexed id)
 
 
 
-## Events
+## Errors
 
 ### InvalidSigError
 
