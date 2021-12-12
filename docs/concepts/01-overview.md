@@ -29,9 +29,7 @@ Each pool achieves its target value by making itself an attractive opportunity f
 
 A trading function is a rule that governs an AMM's swaps between tokens, e.g. the constant product trading function used by Uniswap:
 
-$$
-x\times y=k
-$$
+![Uniswap Trading function](/img/xy_eq_k.png)
 
 ### What are the fees for liquidity providers?
 
