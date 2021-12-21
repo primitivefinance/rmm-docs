@@ -12,7 +12,7 @@ Take this you'll need it...
 
 ### Primitive RMM-01 Whitepaper
 
-[Whitepaper](https://primitive.finance/whitepaper)
+[Whitepaper](https://primitive.finance/whitepaper-rmm-01.pdf)
 
 ### Maths
 
