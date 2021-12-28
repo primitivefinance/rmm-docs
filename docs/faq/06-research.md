@@ -2,7 +2,11 @@
 description: For magicians or apprentices only...
 ---
 
-# Advanced
+# Research
+
+## Github
+
+[RMM Research Repository](https://github.com/primitivefinance/rmm-research)
 
 ## Maths Ahead
 
@@ -10,11 +14,11 @@ description: For magicians or apprentices only...
 
 Take this you'll need it...
 
-### Primitive RMM-01 Whitepaper
+## Primitive RMM-01 Whitepaper
 
 [Whitepaper](https://primitive.finance/whitepaper-rmm-01.pdf)
 
-### Maths
+## Maths
 
 [Constant Function Market Makers](https://web.stanford.edu/\~guillean/papers/constant\_function\_amms.pdf)
 

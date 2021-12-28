@@ -17,7 +17,7 @@ const config = {
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/primitive-logo.png',
 	organizationName: 'PrimitiveFinance', // Usually your GitHub org/user name.
-	projectName: 'Primitive Protocol Docs', // Usually your repo name.
+	projectName: 'Primitive RMM Protocol Docs', // Usually your repo name.
 
 	presets: [
 		[
@@ -25,8 +25,8 @@ const config = {
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
 				docs: {
-					path: 'docs/concepts',
-					routeBasePath: 'concepts/',
+					path: 'docs/faq',
+					routeBasePath: 'faq/',
 					sidebarPath: require.resolve('./sidebars.js'),
 					remarkPlugins: [math],
 					rehypePlugins: [katex],
@@ -46,9 +46,9 @@ const config = {
 	plugins: [
 		[
 			"@docusaurus/plugin-content-docs", {
-				id: 'protocol',
-				path: 'docs/protocol',
-				routeBasePath:'protocol/',
+				id: 'technical',
+				path: 'docs/technical',
+				routeBasePath:'technical/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
 		],
@@ -83,9 +83,9 @@ const config = {
 						type: 'doc',
 						docId: 'overview',
 						position: 'left',
-						label: 'Concepts',
+						label: 'FAQ',
 					},
-					{ to: '/protocol/overview', label: 'Protocol', position: 'left', },
+					{ to: '/technical/overview', label: 'Technical', position: 'left', },
 					{
 						label: 'Ecosystem',
 						to: '/ecosystem/overview',
@@ -114,7 +114,7 @@ const config = {
 						items: [
 							{
 								label: 'Discord',
-								href: 'https://discord.gg/rzRwJ4K',
+								href: 'https://discord.gg/primitive',
 							},
 							{
 								label: 'Twitter',

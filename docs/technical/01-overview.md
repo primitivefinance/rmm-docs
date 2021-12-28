@@ -1,7 +1,7 @@
 ---
 description: >-
   A basic overview of the Primitive Engine, a core smart contract of Primitive
-  Protocol.
+  RMM Protocol.
 ---
 
 # Overview
@@ -16,7 +16,12 @@ This Engine has an extra feature to carry an internal token balance, which will 
 
 ## Deployed Addresses
 
-To add...
+There are no currently deployed contracts on production networks as of December 28, 2021.
+
+| Name | Network | Address | Version |
+| -------- | -------- | -------- | -------- |
+| PrimitiveFactory     | Rinkeby (chainId 4)     | `0xFdfd3F318ff62eAa8888A54758F086567534F733`     | Beta.3 |
+| PrimitiveManager     | Rinkeby (chainId 4)     | `0x9Db95307FFd122323CF297Ac91145C2155E3Eb62`     | Beta.3 |
 
 ### ABI
 

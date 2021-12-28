@@ -4,22 +4,22 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
 	{
-		title: 'Concepts',
+		title: 'FAQ',
 		Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
-		href: '/concepts/overview',
+		href: '/faq/overview',
 		description: (
 			<>
-				Concepts to Learn
+				Frequently Asked Questions
 			</>
 		),
 	},
 	{
-		title: 'Protocol',
+		title: 'Technical',
 		Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
-		href: '/protocol/overview',
+		href: '/technical/overview',
 		description: (
 			<>
-				Technical Specification
+				Technical Resources
 			</>
 		),
 	},
@@ -29,7 +29,7 @@ const FeatureList = [
 		Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
 		description: (
 			<>
-				Ecosystem & Community
+				Community Resources
 			</>
 		),
 	},
