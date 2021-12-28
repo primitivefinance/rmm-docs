@@ -66,7 +66,7 @@ In addition, AMM positions are instantly convertible into the underlying tokens,
 
 To learn more about how AMMs and portfolio replication go together, check out the research by Guillermo, Alex, and Tarun:
 
-[Research](advanced/)
+[Research](/06-research.md/)
 
 
 
