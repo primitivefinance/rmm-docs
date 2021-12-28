@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Official Primitive Documentation
 
-Primitive built the **Replicating Market Maker** (RMM) protocol, an oracle-free solution to scalable and efficient on-chain derivatives.
+Primitive built the **Replicating Market Maker** ("RMM") protocol, an **oracle-free** solution to **scalable** and **efficient** on-chain derivatives.
 
 RMM liquidity is an innovative financial vehicle that replicates derivative payoffs. Assets that back these derivatives are productively used as spot liquidity, allowing swaps between the assets just like any other DEX. 
 

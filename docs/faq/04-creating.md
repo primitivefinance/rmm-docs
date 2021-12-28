@@ -5,11 +5,11 @@ description: Frequently asked questions about creating new pools
 
 # Creating Pairs and Pools
 
-Two types of creation occur in RMM Protocol: new token pairs (Engines), and new pools (Curves).
+Two types of creation occur in RMM Protocol: new token pairs ("Engines"), and new pools ("Curves").
 
 ### Who can create new token pairs and pools?
 
-*Anyone* can deploy new pairs through the factory, or create new pools. RMM Protocol is completely permissionless.
+*Anyone* can deploy new pairs through the factory, or create new pools. RMM Protocol is completely permission-less.
 
 ### How are new token pairs created?
 
@@ -31,9 +31,9 @@ A pool creator is responsible for specifying the amount of underlying token rese
 
 Anyone can create new pools, this makes it good opportunity for anyone to get any covered call payoff they desire. If a pool with desired parameters (e.g. a higher strike price) is not available, a new pool can be created and liquidity can be provided to it.
 
-### Whats the catch, is there a case in which a pool should not be used?
+### Whats the catch? Is there a case in which a pool should not be used?
 
-However, the caveat is that if the pool's liquidity is not large enough, then the rebalancing may not occur as often. The effect of this is potentially a failed replication, where the value of the portfolio did not track the theoretical value of the covered call. This means that no trading occurs, and thus no swap fees are generated for the liquidity providers.
+There is a caveat that if the pool's liquidity is not large enough, then the re-balancing may not occur as often because arbitrageurs will not find it profitable. The effect of this is potentially a failed replication, where the value of the portfolio did not track the theoretical value of the covered call. This means that no trading occurs, and thus no swap fees are generated for the liquidity providers.
 
 ### How much do new pools cost to create?
 

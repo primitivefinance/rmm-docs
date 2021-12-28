@@ -20,21 +20,21 @@ Primitive is an ecosystem of efforts to build an innovative and oracle-free solu
 Oracles in DeFi remain one of the largest centralization risks and economic attack vectors. This risk translates down to any user of an oracle embedded protocol. 
 
 
-As derivatives in DeFi scale beyond spot markets, reliance on oracles becomes a systemic risk which will correlate protocols much closer than they desire to be. With an oracle-free protocol, these systemic risks are not excerbated to all the other protocols which have composed with RMM. The result of this is ultimately lower risk, safer yields, and more adoption of RMM liquidity.
+As derivatives in DeFi scale beyond the size of crypto spot markets, reliance on oracles becomes a systemic risk which will correlate protocols much closer than they desire to be. With an oracle-free protocol, these systemic risks are not exacerbated to all the other protocols which have composed with RMM. The result of this is ultimately lower risk, safer yields, and more adoption of RMM liquidity.
 
 ## What are the key benefits of RMM Protocol?
 
 RMM-01 is both a financial vehicle for a covered-call like payoff, and a decentralized spot exchange. There are benefits to using RMM for both cases:
 
 ### Liquidity Token as a financial vehicle
-- Reduced risk from oracle-free architecture
-- Always redeemable into its underlying assets
-- Easily composable with other protocols
+- **Reduced risk** from oracle-free architecture
+- **Redeemable** into its underlying assets at any time
+- **Works** without a counter-party
 
 ### As an AMM DEX
-- Concentrated Liquidity
-- Fungible Liquidity
-- Cheap position updates
+- **Concentrated Liquidity** increases capital efficiency
+- **Fungible Liquidity** enables LPT derivatives like staking and borrowing
+- **Cheap** position updates increase fee revenue
 
 ## Can Primitive be upgraded or changed?
 
@@ -50,7 +50,7 @@ Alternatively, it can be access through [IPFS](https://ipfs.io), or even downloa
 
 For RMM-01 protocol: 
 
-1. Provide liquidity to get Liquidity Pool Tokens (LPTs) which have the payoff of a covered call option.
+1. Provide liquidity to get Liquidity Pool Tokens ("LPTs") which have the payoff of a covered call option.
 2. Swap between pool assets on concentrated liquidity curves.
 3. Use LPTs in other protocols (e.g. as collateral, selling rights to underlying assets, etc.).
 
@@ -62,7 +62,7 @@ To swap, the desired input token must have the Primitive Manager contract approv
 
 To create pools, its the same as providing liquidity, except you are responsible for pricing the pool's liquidity at an implied spot price.
 
-To create new pairs, Ether to pay the gas cost to deploy the pair from the Primitive Factory contract.
+To create new pairs, the Layer 1 network token (e.g. Ether) to pay the gas cost to deploy the pair from the Primitive Factory contract.
 
 ## Does Primitive charge fees?
 
@@ -72,7 +72,7 @@ Only liquidity providers of RMM earn trading fees.
 
 ## How can I earn money using Primitive?
 
-Deposit two tokens into an RMM-01 pool to start earning trading fees, which are re-invested into the pool pro-rata. 
+Deposit two tokens into an RMM-01 pool to start earning trading fees, which are automatically re-invested into the pool on a pro-rata basis. 
 
 ## Can I lose my funds?
 
