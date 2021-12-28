@@ -2,25 +2,38 @@
 description: Introduction of Primitive
 ---
 
-# What is Primitive?
+# Table of contents
 
-Several projects fall under the Primitive name: a US equity company Primitive Bits, the decentralized protocol Primitive Protocol, and the Primitive Interface. 
+* [What is Primitive?](faq/01-overview.md)
 
-**Company:** The company is a US incorporated legal entity that develops the protocol and interface.
+## FAQ <a href="faq" id="faq"></a>
 
-**Protocol:** The protocol is a set of immutable smart contracts which do not grant special permission to the Company.
+* [General](faq/02-general.md)
+* [Providing Liquidity](faq/03-liquidity.md)
+* [Creating New Pools](faq/04-creating.md)
+* [Replicating Market Makers](faq/05-rmm.md)
+* [Research](faq/06-research.md)
+* [Security](faq/07-security.md)
+* [Frontend SDK](faq/08-frontend-sdk.md)
+* [Brand Assets](faq/09-brand-assets.md)
+* [Community](faq/10-community.md)
+* [Glossary](faq/11-glossary.md)
 
-**Interface: **The interface is open-source code hosted on a company controlled domain [primitive.finance](https://primitive.finance), as well as decentrally hosted through [IPFS](https://ipfs.io). It is available to be downloaded and run locally.
+## Technical <a href="technical" id="technical"></a>
 
-### Overview
+* [Core](technical/01-overview.md)
+  * [PrimitiveEngine](technical/core/01-engine.md)
+    * [Swap](technical/core/03-swap.md)
+  * [PrimitiveFactory](technical/core/02-factory.md)
+  * [libraries](technical/core/04-libraries.md)
+* [Manager](technical/manager/01-overview.md)
+  * [PrimitiveManager](technical/manager/02-primitive-manager.md)
+* [Testing Environment](technical/testing-environment/01-overview.md)
+  * [Context loading (fixtures)](technical/testing-environment/02-context.md)
+  * [Mocha and Chai](technical/testing-environment/03-mocha-and-chai.md)
+  * [Parallelization](technical/testing-environment/04-parallelization.md)
+  * [Units and unit conversion](technical/testing-environment/05-units-and-unit-conversion.md)
 
-The Primitive Protocol is a series of specialized liquidity pools. 
+## Deployments
 
-Primitive's pools are designed to [statically replicate a target portfolio](https://en.wikipedia.org/wiki/Replicating_portfolio), while generating fees for the liquidity providers and acting as a venue for traders to swap between the assets of the pools.
-
-The use of the protocol is open to all and controlled by none. There is no ability to censor who interacts with the Protocol. As such, assets cannot be removed from the protocol, or [restricted from being traded](https://www.cnbc.com/2021/01/28/robinhood-interactive-brokers-restrict-trading-in-gamestop-s.html).
-
-### Learn more
-
-To learn more about the magic behind the protocol, start by reading the concepts which explain the math:
-
+* [Deployed Contracts](technical/01-overview.md)
