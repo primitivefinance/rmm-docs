@@ -1,14 +1,19 @@
 ---
-description: Primitive Engine Interface
+description: Primitive Engine
 
 ---
 
-# IPrimitiveEngine.sol
+# PrimitiveEngine.sol
+
+
+Replicating Market Maker
 
 
 
+:::note Details
+RMM-01
 
-
+:::
 
 
 
@@ -163,7 +168,7 @@ Fetches `Calibration` pool parameters
 
 
 ```solidity title="Solidity"
-function calibrations(bytes32 poolId) external view returns (uint128 strike, uint32 sigma, uint32 maturity, uint32 lastTimestamp, uint32 gamma)
+function calibrations(bytes32) external view returns (uint128 strike, uint32 sigma, uint32 maturity, uint32 lastTimestamp, uint32 gamma)
 
 ```
 
@@ -177,7 +182,7 @@ function calibrations(bytes32 poolId) external view returns (uint128 strike, uin
 | Name | Type | Description |
 |---|---|---|
 
-| poolId | bytes32 | Pool Identifier
+| _0 | bytes32 | undefined
 
 
 
@@ -379,7 +384,7 @@ Fetches position liquidity an account address and poolId
 
 
 ```solidity title="Solidity"
-function liquidity(address account, bytes32 poolId) external view returns (uint256 liquidity)
+function liquidity(address, bytes32) external view returns (uint256)
 
 ```
 
@@ -393,10 +398,10 @@ function liquidity(address account, bytes32 poolId) external view returns (uint2
 | Name | Type | Description |
 |---|---|---|
 
-| account | address | undefined
+| _0 | address | undefined
 
 
-| poolId | bytes32 | Pool Identifier
+| _1 | bytes32 | undefined
 
 
 
@@ -407,7 +412,7 @@ function liquidity(address account, bytes32 poolId) external view returns (uint2
 | Name | Type | Description |
 |---|---|---|
 
-| liquidity | uint256 |   Liquidity owned by `account` in `poolId`
+| _0 | uint256 | liquidity   Liquidity owned by `account` in `poolId`
 
 
 
@@ -420,7 +425,7 @@ Fetches the margin balances of `account`
 
 
 ```solidity title="Solidity"
-function margins(address account) external view returns (uint128 balanceRisky, uint128 balanceStable)
+function margins(address) external view returns (uint128 balanceRisky, uint128 balanceStable)
 
 ```
 
@@ -434,7 +439,7 @@ function margins(address account) external view returns (uint128 balanceRisky, u
 | Name | Type | Description |
 |---|---|---|
 
-| account | address | Margin account to fetch
+| _0 | address | undefined
 
 
 
@@ -505,7 +510,7 @@ Fetches the global reserve state for a pool with `poolId`
 
 
 ```solidity title="Solidity"
-function reserves(bytes32 poolId) external view returns (uint128 reserveRisky, uint128 reserveStable, uint128 liquidity, uint32 blockTimestamp, uint256 cumulativeRisky, uint256 cumulativeStable, uint256 cumulativeLiquidity)
+function reserves(bytes32) external view returns (uint128 reserveRisky, uint128 reserveStable, uint128 liquidity, uint32 blockTimestamp, uint256 cumulativeRisky, uint256 cumulativeStable, uint256 cumulativeLiquidity)
 
 ```
 
@@ -519,7 +524,7 @@ function reserves(bytes32 poolId) external view returns (uint128 reserveRisky, u
 | Name | Type | Description |
 |---|---|---|
 
-| poolId | bytes32 | Pool Identifier
+| _0 | bytes32 | undefined
 
 
 
@@ -1163,6 +1168,32 @@ error InvariantError(int128 invariant, int128 nextInvariant)
 | invariant | int128 | Pre-swap invariant updated with new tau |
 
 | nextInvariant | int128 | Post-swap invariant |
+
+
+
+
+### InverseOutOfBounds
+
+
+Thrown on passing an arg that is out of the input range for these math functions
+
+
+```solidity title="Solidity"
+error InverseOutOfBounds(int128 value)
+
+```
+
+
+
+
+
+
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+
+| value | int128 | undefined |
 
 
 
