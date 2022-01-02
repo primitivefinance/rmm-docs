@@ -1,14 +1,19 @@
 ---
-description: Primitive Factory Interface
+description: Primitive Factory
 
 ---
 
-# IPrimitiveFactory.sol
+# PrimitiveFactory.sol
+
+
+No access controls are available to deployer
 
 
 
+:::note Details
+Deploy new PrimitiveEngine contracts
 
-
+:::
 
 
 
@@ -23,7 +28,7 @@ Used to scale the minimum amount of liquidity to lowest precision
 
 
 ```solidity title="Solidity"
-function MIN_LIQUIDITY_FACTOR() external pure returns (uint256)
+function MIN_LIQUIDITY_FACTOR() external view returns (uint256)
 
 ```
 
@@ -171,7 +176,7 @@ Fetches engine address of a token pair which has been deployed from this factory
 
 
 ```solidity title="Solidity"
-function getEngine(address risky, address stable) external view returns (address engine)
+function getEngine(address, address) external view returns (address)
 
 ```
 
@@ -185,10 +190,10 @@ function getEngine(address risky, address stable) external view returns (address
 | Name | Type | Description |
 |---|---|---|
 
-| risky | address | Risky token, the underlying token
+| _0 | address | undefined
 
 
-| stable | address | Stable token, the quote token
+| _1 | address | undefined
 
 
 
@@ -199,7 +204,7 @@ function getEngine(address risky, address stable) external view returns (address
 | Name | Type | Description |
 |---|---|---|
 
-| engine | address |  Engine address for a risky and stable token
+| _0 | address | engine  Engine address for a risky and stable token
 
 
 
@@ -233,13 +238,98 @@ event DeployEngine(address indexed from, address indexed risky, address indexed 
 | Name | Type | Description |
 |---|---|---|
 
-| from `indexed` | address | Calling `msg.sender` of deploy |
+| from `indexed` | address | undefined |
 
-| risky `indexed` | address | Risky token of Engine to deploy |
+| risky `indexed` | address | undefined |
 
-| stable `indexed` | address | Stable token of Engine to deploy |
+| stable `indexed` | address | undefined |
 
-| engine  | address | Deployed engine address |
+| engine  | address | undefined |
+
+
+
+
+
+
+
+
+## Errors
+
+
+### DecimalsError
+
+
+Thrown on attempting to deploy a pool using a token with unsupported decimals
+
+
+```solidity title="Solidity"
+error DecimalsError(uint256 decimals)
+
+```
+
+
+
+
+
+
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+
+| decimals | uint256 | undefined |
+
+
+
+
+### DeployedError
+
+
+Thrown on attempting to deploy an already deployed Engine
+
+
+```solidity title="Solidity"
+error DeployedError()
+
+```
+
+
+
+
+
+
+
+
+### SameTokenError
+
+
+Thrown when the risky and stable tokens are the same
+
+
+```solidity title="Solidity"
+error SameTokenError()
+
+```
+
+
+
+
+
+
+
+
+### ZeroAddressError
+
+
+Thrown when the risky or the stable token is 0x0...
+
+
+```solidity title="Solidity"
+error ZeroAddressError()
+
+```
+
+
 
 
 
