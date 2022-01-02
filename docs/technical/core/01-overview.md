@@ -9,10 +9,10 @@ description: Overview of RMM protocol core smart contracts.
 
 The Engine is a low-level contract with the primary tasks of:
 
-* Create new pools, "curves".
-* Allow liquidity to be allocated and removed from the pools.
+* Creating new pools, "curves".
+* Allocating and removing liquidity from pools.
 * Accept deposits into an internal balance to optimize gas.
-* Allow swaps between the two tokens defined in the Engine, using the trading function.
+* Allow swaps between the two tokens defined in the Engine, using the CFMM trading invariant function.
 
 ### Underlying Token, Strike Token, Strike Price, Volatility, Maturity, and Swap Fee
 
@@ -26,7 +26,7 @@ A token pair remains a token pair throughout its life, and that is why these add
 
 ### Choose Pool Parameters
 
-The next variables, strike, volatility, maturity, and gamma, are _curve parameters, _called a `Calibration`, and they are chosen when a new pool is created. New pools can be created in the Engine contract, with reasonable limits to which parameters are used. On pool creation, an initial amount of liquidity must be minted which requires the `msg.sender` to pay the Engine's risky and stable tokens as the first provided liquidity.
+The next variables, strike, volatility, maturity, and gamma, are curve parameters, called a `Calibration`, and they are chosen when a new pool is created. New pools can be created in the Engine contract, with reasonable limits to which parameters are used. On pool creation, an initial amount of liquidity must be minted which requires the `msg.sender` to pay the Engine's risky and stable tokens as the first provided liquidity.
 
 ## What can I do to interact with the curves?
 
@@ -38,7 +38,7 @@ Therefore, adding liquidity multiplies that by a linear amount, so providing two
 
 ### Liquidity Position
 
-Instead of liquidity being directly tokenized, it exists as state in the Engine contract. Each liquidity position is controlled by a `msg.sender` address.
+Instead of liquidity being directly tokenized, it exists as state in the Engine contract. Each liquidity position is controlled by an address.
 
 ```
 mapping(address => mapping(bytes32 => uint256)) public override liquidity;
@@ -64,16 +64,11 @@ A high-level smart contract primarily used by end-users.
 * Takes action for profit, net of swap and gas fees.
 * Pays a swap fee to liquidity providers.
 
-### Keeper
-
-* Uses the `swap()` function to update the time until expiry of the curve payoff, to make sure the curve is updated on a regular cadence.
-* Similar to Arbitrageur, but will take action even at a loss.
-
 
 
 ### Source Code
 
-[https://github.com/primitivefinance/primitive-v2-core/blob/main/contracts/PrimitiveEngine.sol](https://github.com/primitivefinance/primitive-v2-core/blob/main/contracts/PrimitiveEngine.sol)
+[https://github.com/primitivefinance/rmm-core/blob/main/contracts/PrimitiveEngine.sol](https://github.com/primitivefinance/rmm-core/blob/main/contracts/PrimitiveEngine.sol)
 
 
 # PrimitiveFactory.sol
@@ -101,7 +96,7 @@ The Engine contract does not take constructor parameters, as this would modify t
 
 ### Source Code
 
-[https://github.com/primitivefinance/primitive-v2-core/blob/main/contracts/PrimitiveFactory.sol](https://github.com/primitivefinance/primitive-v2-core/blob/main/contracts/PrimitiveEngine.sol)
+[https://github.com/primitivefinance/rmm-core/blob/main/contracts/PrimitiveFactory.sol](https://github.com/primitivefinance/rmm-core/blob/main/contracts/PrimitiveEngine.sol)
 
 # Swap
 
