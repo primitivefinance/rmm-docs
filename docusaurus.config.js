@@ -4,6 +4,9 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: 'Primitive',
@@ -14,7 +17,7 @@ const config = {
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/primitive-logo.png',
 	organizationName: 'PrimitiveFinance', // Usually your GitHub org/user name.
-	projectName: 'Primitive Protocol Docs', // Usually your repo name.
+	projectName: 'Primitive RMM Protocol Docs', // Usually your repo name.
 
 	presets: [
 		[
@@ -22,9 +25,11 @@ const config = {
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
 				docs: {
-					path: 'docs/concepts',
-					routeBasePath: 'concepts/',
+					path: 'docs/faq',
+					routeBasePath: 'faq/',
 					sidebarPath: require.resolve('./sidebars.js'),
+					remarkPlugins: [math],
+					rehypePlugins: [katex],
 				},
 				blog: {
 					showReadingTime: true,
@@ -41,9 +46,9 @@ const config = {
 	plugins: [
 		[
 			"@docusaurus/plugin-content-docs", {
-				id: 'protocol',
-				path: 'docs/protocol',
-				routeBasePath:'protocol/',
+				id: 'technical',
+				path: 'docs/technical',
+				routeBasePath:'technical/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
 		],
@@ -56,7 +61,13 @@ const config = {
 			}
 		],
 	],
-
+	stylesheets: [
+		{
+			href: "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css",
+			integrity: "sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc",
+			crossorigin: "anonymous",
+		},
+	],
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
@@ -72,9 +83,9 @@ const config = {
 						type: 'doc',
 						docId: 'overview',
 						position: 'left',
-						label: 'Concepts',
+						label: 'FAQ',
 					},
-					{ to: '/protocol/overview', label: 'Protocol', position: 'left', },
+					{ to: '/technical/overview', label: 'Technical', position: 'left', },
 					{
 						label: 'Ecosystem',
 						to: '/ecosystem/overview',
@@ -103,7 +114,7 @@ const config = {
 						items: [
 							{
 								label: 'Discord',
-								href: 'https://discord.gg/rzRwJ4K',
+								href: 'https://discord.gg/primitive',
 							},
 							{
 								label: 'Twitter',
