@@ -12,7 +12,7 @@ This Engine has an extra feature to carry an internal token balance, which will 
 
 ## Source Code
 
-[Core Smart Contracts](https://github.com/primitivefinance/rmm-core/blob/main)
+[Core Smart Contracts](https://github.com/primitivefinance/rmm-core/)
 
 ## Deployed Addresses
 
