@@ -14,6 +14,10 @@
 --ifm-color-primary-lighter: #7ecdaa;
 --ifm-color-primary-lightest: #9dd9bf;
   --ifm-code-font-size: 95%;
+
+  --ifm-font-family-base: "Suisse Intl";
+
+
 }
 
 .docusaurus-highlight-code-line {
@@ -25,4 +29,147 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Thin-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Thin-WebM.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-ThinItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-ThinItalic-WebM.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Ultralight-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Ultralight-WebM.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-UltralightItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-UltralightItalic-WebM.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Light-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Light-WebM.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-LightItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-LightItalic-WebM.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Regular-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Regular-WebM.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-RegularItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-RegularItalic-WebM.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Medium-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Medium-WebM.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-MediumItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-MediumItalic-WebM.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-SemiBold-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-SemiBold-WebM.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-SemiBoldItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-SemiBoldItalic-WebM.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Bold-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Bold-WebM.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-BoldItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-BoldItalic-WebM.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Book-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Book-WebM.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-BookItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-BookItalic-WebM.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Black-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Black-WebM.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-BlackItalic-WebM.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-BlackItalic-WebM.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
 }
