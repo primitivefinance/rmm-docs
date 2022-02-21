@@ -57,7 +57,7 @@ const config = {
 				id: 'ecosystem',
 				path: 'docs/ecosystem',
 				routeBasePath: 'ecosystem/',
-				sidebarPath: require.resolve('./sidebars.js')
+				sidebarPath: require.resolve('./ecosystem-sidebar.js')
 			}
 		],
 	],
