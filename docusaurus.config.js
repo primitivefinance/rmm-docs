@@ -48,7 +48,7 @@ const config = {
 			"@docusaurus/plugin-content-docs", {
 				id: 'technical',
 				path: 'docs/technical',
-				routeBasePath:'technical/',
+				routeBasePath: 'technical/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
 		],
@@ -56,7 +56,7 @@ const config = {
 			"@docusaurus/plugin-content-docs", {
 				id: 'ecosystem',
 				path: 'docs/ecosystem',
-				routeBasePath:'ecosystem/',
+				routeBasePath: 'ecosystem/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
 		],
@@ -72,6 +72,16 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			hideableSidebar: true,
+			/*
+			announcementBar: {
+				id: 'launch',
+				content:
+					'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+				backgroundColor: '#fafbfc',
+				textColor: '#091E42',
+				isCloseable: true,
+			},
+			*/
 			navbar: {
 				title: 'Primitive Docs',
 				logo: {
@@ -81,11 +91,15 @@ const config = {
 				items: [
 					{
 						type: 'doc',
-						docId: 'overview',
+						docId: 'introduction',
 						position: 'left',
 						label: 'FAQ',
 					},
-					{ to: '/technical/overview', label: 'Technical', position: 'left', },
+					{
+						to: '/technical/smart-contracts/overview',
+						label: 'Technical',
+						position: 'left',
+					},
 					{
 						label: 'Ecosystem',
 						to: '/ecosystem/overview',

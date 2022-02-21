@@ -17,8 +17,18 @@
 
   --ifm-font-family-base: "Suisse Intl";
 
-
+  /* --ifm-navbar-background-color: transparent; */
 }
+
+/*
+.navbar {
+  box-shadow: none;
+}
+
+.navbar--fixed-top {
+  position: relative;
+}
+*/
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
