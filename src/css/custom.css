@@ -7,17 +7,59 @@
 /* You can override the default Infima variables here. */
 :root {
 	--ifm-color-primary: #5fc196;
---ifm-color-primary-dark: #4ab988;
---ifm-color-primary-darker: #44b081;
---ifm-color-primary-darkest: #38916a;
---ifm-color-primary-light: #74c9a4;
---ifm-color-primary-lighter: #7ecdaa;
---ifm-color-primary-lightest: #9dd9bf;
+  --ifm-color-primary-dark: #4ab988;
+  --ifm-color-primary-darker: #44b081;
+  --ifm-color-primary-darkest: #38916a;
+  --ifm-color-primary-light: #74c9a4;
+  --ifm-color-primary-lighter: #7ecdaa;
+  --ifm-color-primary-lightest: #9dd9bf;
   --ifm-code-font-size: 95%;
 
   --ifm-font-family-base: "Suisse Intl";
 
-  /* --ifm-navbar-background-color: transparent; */
+  --ifm-background-color: #151718;
+  --ifm-footer-background-color: #151718;
+
+  --ifm-navbar-background-color: transparent;
+}
+
+.navbar {
+  background-color: #151718;
+  box-shadow: none;
+  position: relative;
+  padding: 16px;
+}
+
+.navbar__item {
+  padding: 0.5rem;
+}
+
+.navbar__link {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #9BA1A6;
+}
+
+.navbar__link--active {
+  color: #ECEDEE;
+}
+
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+  border-right: none !important;
+}
+
+.docItemCol_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module {
+  margin: 3rem 4rem 0 4rem;
+  max-width: 700px !important;
+}
+
+.main-wrapper {
+  background-color: #151718;
+}
+
+.footer {
+  background-color: #151718;
+  /* --ifm-footer-background-color: #151718; */
 }
 
 /*
@@ -29,6 +71,25 @@
   position: relative;
 }
 */
+
+.use {
+  border-color: #0000;
+  background-color: #12a594;
+  color: #ECEDEE;
+  font-family: 'Suisse Intl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 1rem !important;
+  border-radius: 12px;
+  height: 2.25rem;
+  align-items: center;
+  display: flex;
+}
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);

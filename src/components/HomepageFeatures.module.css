@@ -1,11 +1,50 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
   width: 100%;
+  margin-top: 5rem;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.section {
+  margin-bottom: 5rem;
+}
+
+.title {
+  color: #ecedee;
+  margin-bottom: 32px;
+  font-size: 30px;
+}
+
+.stuff {
+  border: 1px solid #3a3f42;
+  border-radius: 8px;
+  /* background-color: #151718; */
+  /* background-color: #202425; */
+  background-color: #26292b;
+  padding: 16px;
+  color: #ecedee;
+}
+
+.stuff:hover {
+  /* background-color: #202425; */
+  border-color: #697177;
+}
+
+.stuff a {
+  color: #ecedee;
+}
+
+.stuff a:hover {
+  color: #ecedee;
+  text-decoration: none;
+}
+
+.stuff h3 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.stuff p {
+  margin: 0;
+  color: #ACACAB;
 }

@@ -2,50 +2,65 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
-const FeatureList = [
+const GettingStartedList = [
 	{
 		title: 'FAQ',
-		Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
 		href: '/faq/overview',
 		description: (
 			<>
-				Frequently Asked Questions
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 			</>
 		),
 	},
 	{
 		title: 'Technical',
-		Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
 		href: '/technical/overview',
 		description: (
 			<>
-				Technical Resources
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 			</>
 		),
 	},
 	{
 		title: 'Ecosystem',
 		href: '/ecosystem/overview',
-		Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
 		description: (
 			<>
-				Community Resources
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 			</>
 		),
 	},
 ];
 
-function Feature({ Svg, title, href, description }) {
+const ToolsList = [
+	{
+		title: 'Dodoc',
+		href: '/faq/overview',
+		description: (
+			<>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+			</>
+		),
+	},
+	{
+		title: 'Marmite',
+		href: '/technical/overview',
+		description: (
+			<>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+			</>
+		),
+	},
+];
+
+function Feature({ title, href, description }) {
 	return (
 		<div className={clsx('col col--4')} >
-			<div className="text--center">
+			<div className={styles.stuff}>
 				<a href={href}>
-					<Svg className={styles.featureSvg} alt={title} />
+					<h3>{title}</h3>
+					<p>{description}</p>
 				</a>
-			</div>
-			<div className="text--center padding-horiz--md">
-				<h3>{title}</h3>
-				<p>{description}</p>
 			</div>
 		</div>
 	);
@@ -55,10 +70,25 @@ export default function HomepageFeatures() {
 	return (
 		<section className={styles.features}>
 			<div className="container">
-				<div className="row">
-					{FeatureList.map((props, idx) => (
-						<Feature key={idx} {...props} />
-					))}
+				<div className={styles.section}>
+					<h2 className={styles.title}>
+						Getting Started
+					</h2>
+					<div className="row">
+						{GettingStartedList.map((props, idx) => (
+							<Feature key={idx} {...props} />
+						))}
+					</div>
+				</div>
+				<div className={styles.section}>
+					<h2 className={styles.title}>
+						Tools
+					</h2>
+					<div className="row">
+						{ToolsList.map((props, idx) => (
+							<Feature key={idx} {...props} />
+						))}
+					</div>
 				</div>
 			</div>
 		</section>

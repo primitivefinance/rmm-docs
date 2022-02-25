@@ -19,6 +19,8 @@ const config = {
 	organizationName: 'PrimitiveFinance', // Usually your GitHub org/user name.
 	projectName: 'Primitive RMM Protocol Docs', // Usually your repo name.
 
+
+
 	presets: [
 		[
 			'@docusaurus/preset-classic',
@@ -71,7 +73,11 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
-			hideableSidebar: true,
+			colorMode: {
+				disableSwitch: true,
+				defaultMode: 'dark',
+			},
+			hideableSidebar: false,
 			/*
 			announcementBar: {
 				id: 'launch',
@@ -83,7 +89,6 @@ const config = {
 			},
 			*/
 			navbar: {
-				title: 'Primitive Docs',
 				logo: {
 					alt: 'Primitive Logo',
 					src: 'img/primitive-logo.png',
@@ -104,6 +109,12 @@ const config = {
 						label: 'Ecosystem',
 						to: '/ecosystem/overview',
 						position: 'left',
+					},
+					{
+						to: '/',
+						label: 'Use Primitive',
+						position: 'right',
+						className: 'use'
 					},
 				],
 			},
@@ -146,7 +157,7 @@ const config = {
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()} Primitive.`,
+				// copyright: `Copyright © ${new Date().getFullYear()} Primitive.`,
 			},
 			prism: {
 				theme: lightCodeTheme,
