@@ -58,15 +58,45 @@ const ToolsList = [
 	},
 ];
 
+const Repos = [
+	{
+		name: 'rmm-core',
+		href: 'https://github.com/primitivefinance/rmm-core',
+	},
+	{
+		name: 'rmm-manager',
+		href: 'https://github.com/primitivefinance/rmm-manager',
+	},
+	{
+		name: 'rmm-ethers',
+		href: 'https://github.com/primitivefinance/rmm-ethers',
+	},
+]
+
 function Feature({ title, href, target, description }) {
 	return (
 		<div className={clsx('col col--4')} >
-			<div className={styles.stuff}>
-				<a href={href} target={target}>
+			<a className={styles.homelink} href={href} target={target}>
+				<div className={styles.stuff}>
 					<h3>{title}</h3>
 					<p>{description}</p>
-				</a>
-			</div>
+				</div>
+			</a>
+		</div>
+	);
+}
+
+function Repo({ name, href }) {
+	return (
+		<div className={clsx('col col--4')} >
+			<a className={styles.homelink} href={href} target="_blank">
+				<div className={styles.stuff}>
+					<div className={styles.repo}>
+						<img className={styles.github} src="/img/github-mark.svg" alt="Github" />
+						<h4>{name}</h4>
+					</div>
+				</div>
+			</a>
 		</div>
 	);
 }
@@ -82,6 +112,16 @@ export default function HomepageFeatures() {
 					<div className="row">
 						{GettingStartedList.map((props, idx) => (
 							<Feature key={idx} {...props} />
+						))}
+					</div>
+				</div>
+				<div className={styles.section}>
+					<h2 className={styles.title}>
+						Repos
+					</h2>
+					<div className="row">
+						{Repos.map((props, idx) => (
+							<Repo key={idx} {...props} />
 						))}
 					</div>
 				</div>

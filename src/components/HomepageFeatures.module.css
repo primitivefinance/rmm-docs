@@ -15,6 +15,10 @@
   font-size: 30px;
 }
 
+.homelink:hover {
+  text-decoration: none;
+}
+
 .stuff {
   border: 1px solid #3a3f42;
   border-radius: 8px;
@@ -44,7 +48,24 @@
   font-weight: 800;
 }
 
+.stuff h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
 .stuff p {
   margin: 0;
   color: #ACACAB;
+}
+
+.repo {
+  display: flex;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.github {
+  fill: #ACACAB;
+  height: 24px;
 }
