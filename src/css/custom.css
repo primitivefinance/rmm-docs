@@ -49,7 +49,6 @@
 }
 
 .docItemCol_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module {
-  margin: 3rem 4rem 0 4rem;
   max-width: 700px !important;
 }
 
@@ -62,15 +61,26 @@
   /* --ifm-footer-background-color: #151718; */
 }
 
-/*
-.navbar {
-  box-shadow: none;
+table {
+  border: 1px solid #4C5155;
+  border-radius: 12px;
+  background-color: #1A1D1E;
+  width: fit-content;
 }
 
-.navbar--fixed-top {
-  position: relative;
+table thead tr {
+  border: none;
+  border-bottom: 1px solid #4C5155;
 }
-*/
+
+table th, table td {
+  border: none;
+  text-align: left;
+}
+
+table tr {
+  border: none;
+}
 
 .use {
   border-color: #0000;
