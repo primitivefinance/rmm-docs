@@ -6,6 +6,7 @@ const GettingStartedList = [
 	{
 		title: 'FAQ',
 		href: '/faq/overview',
+		target: '_self',
 		description: (
 			<>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
@@ -15,6 +16,7 @@ const GettingStartedList = [
 	{
 		title: 'Technical',
 		href: '/technical/overview',
+		target: '_self',
 		description: (
 			<>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
@@ -24,6 +26,7 @@ const GettingStartedList = [
 	{
 		title: 'Ecosystem',
 		href: '/ecosystem/overview',
+		target: '_self',
 		description: (
 			<>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
@@ -35,29 +38,31 @@ const GettingStartedList = [
 const ToolsList = [
 	{
 		title: 'Dodoc',
-		href: '/faq/overview',
+		href: 'https://github.com/primitivefinance/primitive-dodoc',
+		target: '_blank',
 		description: (
 			<>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				Zero-config Hardhat plugin to generate documentation for all your Solidity contracts.
 			</>
 		),
 	},
 	{
 		title: 'Marmite',
-		href: '/technical/overview',
+		href: 'https://github.com/primitivefinance/hardhat-marmite',
+		target: '_blank',
 		description: (
 			<>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				Hassle-free Hardhat plugin to compare gas cost among different Solidity code snippets.
 			</>
 		),
 	},
 ];
 
-function Feature({ title, href, description }) {
+function Feature({ title, href, target, description }) {
 	return (
 		<div className={clsx('col col--4')} >
 			<div className={styles.stuff}>
-				<a href={href}>
+				<a href={href} target={target}>
 					<h3>{title}</h3>
 					<p>{description}</p>
 				</a>
