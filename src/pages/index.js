@@ -8,8 +8,10 @@ import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-    </header>
+    <div className="container">
+      <header className={styles.heroBanner}>
+      </header>
+    </div>
   );
 }
 

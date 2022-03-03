@@ -5,7 +5,7 @@
 
 .heroBanner {
   height: 450px;
-  background-image: url('/img/id_.gif');
+  background: linear-gradient(to bottom, #0000, #151718), url('/img/unknown.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
