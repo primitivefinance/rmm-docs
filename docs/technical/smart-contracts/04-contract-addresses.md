@@ -23,7 +23,7 @@ As of February 20, 2022, RMM contracts are **NOT deployed** on Ethereum Mainnet.
 ## Wrapped Native Token Addresses
 
 | Network | Wrapped Native Token | Address |
-| --- | :---: | --- |
+| --- | --- | --- |
 | Rinkeby (`4`) | WETH | [`0xFdfd3F318ff62eAa8888A54758F086567534F733`](https://etherscan.io) |
 | Ropsten (`3`) | WETH | [`0xFdfd3F318ff62eAa8888A54758F086567534F733`](https://etherscan.io) |
 | Mainnet (`1`) | WETH | [`0xFdfd3F318ff62eAa8888A54758F086567534F733`](https://etherscan.io) |
