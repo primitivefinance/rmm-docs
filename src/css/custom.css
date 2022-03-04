@@ -82,6 +82,37 @@ table tr {
   border: none;
 }
 
+.audit__link:hover {
+  text-decoration: none;
+}
+
+.audit__list {
+  grid-gap: 1.5rem;
+  display: grid;
+}
+
+.audit {
+  border: 1px solid #3a3f42;
+  border-radius: 12px;
+  background-color: #26292b;
+  padding: 16px;
+  color: #ecedee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.audit__title,
+.audit__title:hover {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.audit__date,
+.audit__date:hover {
+  font-size: 16px;
+}
+
 .use {
   border-color: #0000;
   background-color: #12a594;
