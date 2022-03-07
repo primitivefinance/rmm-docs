@@ -11,7 +11,9 @@ The security of our protocol is our main priority, however it's impossible to gu
 
 ### Were the RMM contracts audited?
 
-Yes, our contracts were audited by multiple leading security companies, you can learn more on our [dedicated page](/technical/security/audits).
+Yes. RMM protocol contracts have been audited by five security firms, making it one of the most audited set of smart contracts in DeFi (if not the most). You can learn more about it on our [dedicated page](/technical/security/audits).
+
+While these audits give high confidence in the protocol's security, the smart contracts still have the possibility of containing bugs. Along with the audits, Primitive has a $1,000,000 bug bounty on [Immunefi](https://immunefi.com/bounty/primitive/), and $10,000,000 of coverage by [Sherlock](https://sherlock.xyz/).
 
 ### Are there any admin Keys?
 
@@ -26,3 +28,7 @@ Once again no.
 ### Are there any financial risks using RMM?
 
 Yes, we recommend reading carefully our documentation or asking questions on our Discord server if some aspects of our protocol remain unclear.
+
+## Oracle Risks
+
+None! RMM doesn't rely on any oracles.
