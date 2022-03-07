@@ -21,7 +21,9 @@ No, our contracts are completely decentralized and permissionless, we *DO NOT* c
 
 ### Are the contracts upgradeable?
 
-Once again no.
+The core contracts of the RMM protocol are **immutable**, which means that they cannot be updated.
+
+However, the [PositionRenderer](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/PositionRenderer.sol) contract, responsible of displaying the visuals of our liquidity pool tokens is upgradeable. But this contract doesn't contain any actionable logic, besides rendering graphics.
 
 ## Usage Risks
 
@@ -30,5 +32,7 @@ Once again no.
 Yes, we recommend reading carefully our documentation or asking questions on our Discord server if some aspects of our protocol remain unclear.
 
 ## Oracle Risks
+
+### Are there any risks linked to oracles?
 
 None! RMM doesn't rely on any oracles.
