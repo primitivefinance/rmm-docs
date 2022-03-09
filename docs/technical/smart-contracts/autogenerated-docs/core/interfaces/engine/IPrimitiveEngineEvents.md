@@ -3,6 +3,7 @@ description: Events of the Primitive Engine contract
 ---
 
 # IPrimitiveEngineEvents.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/engine/IPrimitiveEngineEvents.sol)
 
 
 

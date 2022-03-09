@@ -3,6 +3,7 @@ description: View functions of the Primitive Engine contract
 ---
 
 # IPrimitiveEngineView.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/engine/IPrimitiveEngineView.sol)
 
 
 
@@ -10,7 +11,7 @@ description: View functions of the Primitive Engine contract
 
 ## Methods
 
-### BUFFER()
+### BUFFER
 
 
 
@@ -28,7 +29,7 @@ function BUFFER() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Amount of seconds after pool expiry which allows swaps, no swaps after buffer |
 
-### MIN_LIQUIDITY()
+### MIN_LIQUIDITY
 
 
 
@@ -46,7 +47,7 @@ function MIN_LIQUIDITY() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Amount of liquidity burned on `create()` calls |
 
-### PRECISION()
+### PRECISION
 
 
 
@@ -64,7 +65,7 @@ function PRECISION() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Precision units to scale to when doing token related calculations |
 
-### calibrations(bytes32)
+### calibrations
 
 Fetches `Calibration` pool parameters
 
@@ -91,7 +92,7 @@ function calibrations(bytes32 poolId) external view returns (uint128 strike, uin
 | lastTimestamp | uint32 |   Last timestamp used to calculate time until expiry, aka &quot;tau&quot; |
 | gamma | uint32 |           Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000) |
 
-### factory()
+### factory
 
 
 
@@ -109,7 +110,7 @@ function factory() external view returns (address)
 |---|---|---|
 | _0 | address | undefined |
 
-### invariantOf(bytes32)
+### invariantOf
 
 Fetches the current invariant, notation is usually `k`, based on risky and stable token reserves of pool with `poolId`
 
@@ -132,7 +133,7 @@ function invariantOf(bytes32 poolId) external view returns (int128 invariant)
 |---|---|---|
 | invariant | int128 |   Signed fixed point 64.64 number, invariant of `poolId` |
 
-### liquidity(address,bytes32)
+### liquidity
 
 Fetches position liquidity an account address and poolId
 
@@ -156,7 +157,7 @@ function liquidity(address account, bytes32 poolId) external view returns (uint2
 |---|---|---|
 | liquidity | uint256 |   Liquidity owned by `account` in `poolId` |
 
-### margins(address)
+### margins
 
 Fetches the margin balances of `account`
 
@@ -180,7 +181,7 @@ function margins(address account) external view returns (uint128 balanceRisky, u
 | balanceRisky | uint128 |    Balance of the risky token |
 | balanceStable | uint128 |   Balance of the stable token |
 
-### reserves(bytes32)
+### reserves
 
 Fetches the global reserve state for a pool with `poolId`
 
@@ -209,7 +210,7 @@ function reserves(bytes32 poolId) external view returns (uint128 reserveRisky, u
 | cumulativeStable | uint256 |     Cumulative sum of stable token reserves of the previous update |
 | cumulativeLiquidity | uint256 |  Cumulative sum of total supply of liquidity of the previous update |
 
-### risky()
+### risky
 
 
 
@@ -227,7 +228,7 @@ function risky() external view returns (address)
 |---|---|---|
 | _0 | address | undefined |
 
-### scaleFactorRisky()
+### scaleFactorRisky
 
 
 
@@ -245,7 +246,7 @@ function scaleFactorRisky() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Multiplier to scale amounts to/from, equal to 10^(18 - riskyDecimals) |
 
-### scaleFactorStable()
+### scaleFactorStable
 
 
 
@@ -263,7 +264,7 @@ function scaleFactorStable() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Multiplier to scale amounts to/from, equal to 10^(18 - stableDecimals) |
 
-### stable()
+### stable
 
 
 

@@ -3,6 +3,7 @@ description: Primitive Create Callback
 ---
 
 # IPrimitiveCreateCallback.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/callback/IPrimitiveCreateCallback.sol)
 
 
 
@@ -10,7 +11,7 @@ description: Primitive Create Callback
 
 ## Methods
 
-### createCallback(uint256,uint256,bytes)
+### createCallback
 
 Triggered when creating a new pool for an Engine
 

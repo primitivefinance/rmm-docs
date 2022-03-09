@@ -3,6 +3,7 @@ description: Primitive Swap Callback
 ---
 
 # IPrimitiveSwapCallback.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/callback/IPrimitiveSwapCallback.sol)
 
 
 
@@ -10,7 +11,7 @@ description: Primitive Swap Callback
 
 ## Methods
 
-### swapCallback(uint256,uint256,bytes)
+### swapCallback
 
 Triggered when swapping tokens in an Engine
 

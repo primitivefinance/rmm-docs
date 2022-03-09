@@ -3,6 +3,7 @@ description: Errors for the Primitive Engine contract
 ---
 
 # IPrimitiveEngineErrors.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/engine/IPrimitiveEngineErrors.sol)
 
 Custom errors are encoded with their selector and arguments
 

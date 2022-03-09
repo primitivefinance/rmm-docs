@@ -3,6 +3,7 @@ description: IERC20
 ---
 
 # IERC20.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IERC20.sol)
 
 
 
@@ -10,7 +11,7 @@ description: IERC20
 
 ## Methods
 
-### allowance(address,address)
+### allowance
 
 
 
@@ -34,7 +35,7 @@ function allowance(address owner, address spender) external view returns (uint25
 |---|---|---|
 | _0 | uint256 | undefined |
 
-### approve(address,uint256)
+### approve
 
 
 
@@ -58,7 +59,7 @@ function approve(address spender, uint256 amount) external nonpayable returns (b
 |---|---|---|
 | _0 | bool | undefined |
 
-### balanceOf(address)
+### balanceOf
 
 
 
@@ -81,7 +82,7 @@ function balanceOf(address account) external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | undefined |
 
-### decimals()
+### decimals
 
 
 
@@ -99,7 +100,7 @@ function decimals() external view returns (uint8)
 |---|---|---|
 | _0 | uint8 | undefined |
 
-### totalSupply()
+### totalSupply
 
 
 
@@ -117,7 +118,7 @@ function totalSupply() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | undefined |
 
-### transfer(address,uint256)
+### transfer
 
 
 
@@ -141,7 +142,7 @@ function transfer(address recipient, uint256 amount) external nonpayable returns
 |---|---|---|
 | _0 | bool | undefined |
 
-### transferFrom(address,address,uint256)
+### transferFrom
 
 
 

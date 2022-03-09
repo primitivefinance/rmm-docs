@@ -3,6 +3,7 @@ description: Primitive Deposit Callback
 ---
 
 # IPrimitiveDepositCallback.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/callback/IPrimitiveDepositCallback.sol)
 
 
 
@@ -10,7 +11,7 @@ description: Primitive Deposit Callback
 
 ## Methods
 
-### depositCallback(uint256,uint256,bytes)
+### depositCallback
 
 Triggered when depositing tokens to an Engine
 

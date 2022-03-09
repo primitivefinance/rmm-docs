@@ -3,6 +3,7 @@ description: Action functions for the Primitive Engine contract
 ---
 
 # IPrimitiveEngineActions.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/engine/IPrimitiveEngineActions.sol)
 
 
 
@@ -10,7 +11,7 @@ description: Action functions for the Primitive Engine contract
 
 ## Methods
 
-### allocate(bytes32,address,uint256,uint256,bool,bytes)
+### allocate
 
 Allocates risky and stable tokens to a specific curve with `poolId`
 
@@ -38,7 +39,7 @@ function allocate(bytes32 poolId, address recipient, uint256 delRisky, uint256 d
 |---|---|---|
 | delLiquidity | uint256 | Amount of liquidity given to `recipient` |
 
-### create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)
+### create
 
 Initializes a curve with parameters in the `calibrations` storage mapping in the Engine
 
@@ -69,7 +70,7 @@ function create(uint128 strike, uint32 sigma, uint32 maturity, uint32 gamma, uin
 | delRisky | uint256 |    Total amount of risky tokens provided to reserves |
 | delStable | uint256 |   Total amount of stable tokens provided to reserves |
 
-### deposit(address,uint256,uint256,bytes)
+### deposit
 
 Adds risky and/or stable tokens to a `recipient`&#39;s internal balance account
 
@@ -89,7 +90,7 @@ function deposit(address recipient, uint256 delRisky, uint256 delStable, bytes d
 | delStable | uint256 | Amount of stable tokens to deposit |
 | data | bytes | Arbitrary data that is passed to the depositCallback function |
 
-### remove(bytes32,uint256)
+### remove
 
 Unallocates risky and stable tokens from a specific curve with `poolId`
 
@@ -114,7 +115,7 @@ function remove(bytes32 poolId, uint256 delLiquidity) external nonpayable return
 | delRisky | uint256 |      Amount of risky tokens received from removed liquidity |
 | delStable | uint256 |     Amount of stable tokens received from removed liquidity |
 
-### swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)
+### swap
 
 Swaps between `risky` and `stable` tokens
 
@@ -138,7 +139,7 @@ function swap(address recipient, bytes32 poolId, bool riskyForStable, uint256 de
 | toMargin | bool | Whether the `deltaOut` amount is transferred or deposited into margin |
 | data | bytes | Arbitrary data that is passed to the swapCallback function |
 
-### updateLastTimestamp(bytes32)
+### updateLastTimestamp
 
 Updates the time until expiry of the pool by setting its last timestamp value
 
@@ -161,7 +162,7 @@ function updateLastTimestamp(bytes32 poolId) external nonpayable returns (uint32
 |---|---|---|
 | lastTimestamp | uint32 | Timestamp loaded into the state of the pool&#39;s Calibration.lastTimestamp |
 
-### withdraw(address,uint256,uint256)
+### withdraw
 
 Removes risky and/or stable tokens from a `msg.sender`&#39;s internal balance account
 

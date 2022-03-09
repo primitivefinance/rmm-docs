@@ -3,6 +3,7 @@ description: Primitive Engine
 ---
 
 # PrimitiveEngine.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/PrimitiveEngine.sol)
 
 Replicating Market Maker
 
@@ -13,7 +14,7 @@ RMM-01
 
 ## Methods
 
-### BUFFER()
+### BUFFER
 
 
 
@@ -31,7 +32,7 @@ function BUFFER() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Amount of seconds after pool expiry which allows swaps, no swaps after buffer |
 
-### MIN_LIQUIDITY()
+### MIN_LIQUIDITY
 
 
 
@@ -49,7 +50,7 @@ function MIN_LIQUIDITY() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Amount of liquidity burned on `create()` calls |
 
-### PRECISION()
+### PRECISION
 
 
 
@@ -67,7 +68,7 @@ function PRECISION() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Precision units to scale to when doing token related calculations |
 
-### allocate(bytes32,address,uint256,uint256,bool,bytes)
+### allocate
 
 Allocates risky and stable tokens to a specific curve with `poolId`
 
@@ -95,7 +96,7 @@ function allocate(bytes32 poolId, address recipient, uint256 delRisky, uint256 d
 |---|---|---|
 | delLiquidity | uint256 | Amount of liquidity given to `recipient` |
 
-### calibrations(bytes32)
+### calibrations
 
 Fetches `Calibration` pool parameters
 
@@ -122,7 +123,7 @@ function calibrations(bytes32) external view returns (uint128 strike, uint32 sig
 | lastTimestamp | uint32 |   Last timestamp used to calculate time until expiry, aka &quot;tau&quot; |
 | gamma | uint32 |           Multiplied against swap in amounts to apply fee, equal to 1 - fee % but units are in basis points, valid for (9_000, 10_000) |
 
-### create(uint128,uint32,uint32,uint32,uint256,uint256,bytes)
+### create
 
 Initializes a curve with parameters in the `calibrations` storage mapping in the Engine
 
@@ -153,7 +154,7 @@ function create(uint128 strike, uint32 sigma, uint32 maturity, uint32 gamma, uin
 | delRisky | uint256 |    Total amount of risky tokens provided to reserves |
 | delStable | uint256 |   Total amount of stable tokens provided to reserves |
 
-### deposit(address,uint256,uint256,bytes)
+### deposit
 
 Adds risky and/or stable tokens to a `recipient`&#39;s internal balance account
 
@@ -173,7 +174,7 @@ function deposit(address recipient, uint256 delRisky, uint256 delStable, bytes d
 | delStable | uint256 | Amount of stable tokens to deposit |
 | data | bytes | Arbitrary data that is passed to the depositCallback function |
 
-### factory()
+### factory
 
 
 
@@ -191,7 +192,7 @@ function factory() external view returns (address)
 |---|---|---|
 | _0 | address | undefined |
 
-### invariantOf(bytes32)
+### invariantOf
 
 Fetches the current invariant, notation is usually `k`, based on risky and stable token reserves of pool with `poolId`
 
@@ -214,7 +215,7 @@ function invariantOf(bytes32 poolId) external view returns (int128 invariant)
 |---|---|---|
 | invariant | int128 |   Signed fixed point 64.64 number, invariant of `poolId` |
 
-### liquidity(address,bytes32)
+### liquidity
 
 Fetches position liquidity an account address and poolId
 
@@ -238,7 +239,7 @@ function liquidity(address, bytes32) external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | liquidity   Liquidity owned by `account` in `poolId` |
 
-### margins(address)
+### margins
 
 Fetches the margin balances of `account`
 
@@ -262,7 +263,7 @@ function margins(address) external view returns (uint128 balanceRisky, uint128 b
 | balanceRisky | uint128 |    Balance of the risky token |
 | balanceStable | uint128 |   Balance of the stable token |
 
-### remove(bytes32,uint256)
+### remove
 
 Unallocates risky and stable tokens from a specific curve with `poolId`
 
@@ -287,7 +288,7 @@ function remove(bytes32 poolId, uint256 delLiquidity) external nonpayable return
 | delRisky | uint256 |      Amount of risky tokens received from removed liquidity |
 | delStable | uint256 |     Amount of stable tokens received from removed liquidity |
 
-### reserves(bytes32)
+### reserves
 
 Fetches the global reserve state for a pool with `poolId`
 
@@ -316,7 +317,7 @@ function reserves(bytes32) external view returns (uint128 reserveRisky, uint128 
 | cumulativeStable | uint256 |     Cumulative sum of stable token reserves of the previous update |
 | cumulativeLiquidity | uint256 |  Cumulative sum of total supply of liquidity of the previous update |
 
-### risky()
+### risky
 
 
 
@@ -334,7 +335,7 @@ function risky() external view returns (address)
 |---|---|---|
 | _0 | address | undefined |
 
-### scaleFactorRisky()
+### scaleFactorRisky
 
 
 
@@ -352,7 +353,7 @@ function scaleFactorRisky() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Multiplier to scale amounts to/from, equal to 10^(18 - riskyDecimals) |
 
-### scaleFactorStable()
+### scaleFactorStable
 
 
 
@@ -370,7 +371,7 @@ function scaleFactorStable() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | Multiplier to scale amounts to/from, equal to 10^(18 - stableDecimals) |
 
-### stable()
+### stable
 
 
 
@@ -388,7 +389,7 @@ function stable() external view returns (address)
 |---|---|---|
 | _0 | address | Stable token address, a more accurate name is the quote token |
 
-### swap(address,bytes32,bool,uint256,uint256,bool,bool,bytes)
+### swap
 
 Swaps between `risky` and `stable` tokens
 
@@ -412,7 +413,7 @@ function swap(address recipient, bytes32 poolId, bool riskyForStable, uint256 de
 | toMargin | bool | Whether the `deltaOut` amount is transferred or deposited into margin |
 | data | bytes | Arbitrary data that is passed to the swapCallback function |
 
-### updateLastTimestamp(bytes32)
+### updateLastTimestamp
 
 Updates the time until expiry of the pool by setting its last timestamp value
 
@@ -435,7 +436,7 @@ function updateLastTimestamp(bytes32 poolId) external nonpayable returns (uint32
 |---|---|---|
 | lastTimestamp | uint32 | Timestamp loaded into the state of the pool&#39;s Calibration.lastTimestamp |
 
-### withdraw(address,uint256,uint256)
+### withdraw
 
 Removes risky and/or stable tokens from a `msg.sender`&#39;s internal balance account
 

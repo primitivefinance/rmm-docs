@@ -3,6 +3,7 @@ description: Primitive Factory
 ---
 
 # PrimitiveFactory.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/PrimitiveFactory.sol)
 
 No access controls are available to deployer
 
@@ -13,7 +14,7 @@ Deploy new PrimitiveEngine contracts
 
 ## Methods
 
-### MIN_LIQUIDITY_FACTOR()
+### MIN_LIQUIDITY_FACTOR
 
 Used to scale the minimum amount of liquidity to lowest precision
 
@@ -34,7 +35,7 @@ E.g. if the lowest decimal token is 6, min liquidity w/ 18 decimals             
 |---|---|---|
 | _0 | uint256 | undefined |
 
-### args()
+### args
 
 Called within Engine constructor so Engine can set immutable                            variables without constructor args
 
@@ -57,7 +58,7 @@ function args() external view returns (address factory, address risky, address s
 | scaleFactorStable | uint256 |  Scale factor of the stable token, 10^(18 - stableTokenDecimals) |
 | minLiquidity | uint256 |       Minimum amount of liquidity on pool creation |
 
-### deploy(address,address)
+### deploy
 
 Deploys a new Engine contract and sets the `getEngine` mapping for the tokens
 
@@ -81,7 +82,7 @@ function deploy(address risky, address stable) external nonpayable returns (addr
 |---|---|---|
 | engine | address | undefined |
 
-### deployer()
+### deployer
 
 Deployer does not have any access controls to wield
 
@@ -99,7 +100,7 @@ function deployer() external view returns (address)
 |---|---|---|
 | _0 | address | Deployer of this factory contract |
 
-### getEngine(address,address)
+### getEngine
 
 Fetches engine address of a token pair which has been deployed from this factory
 

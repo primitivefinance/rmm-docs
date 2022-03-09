@@ -3,6 +3,7 @@ description: Primitive Liquidity Callback
 ---
 
 # IPrimitiveLiquidityCallback.sol
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/callback/IPrimitiveLiquidityCallback.sol)
 
 
 
@@ -10,7 +11,7 @@ description: Primitive Liquidity Callback
 
 ## Methods
 
-### allocateCallback(uint256,uint256,bytes)
+### allocateCallback
 
 Triggered when providing liquidity to an Engine
 
