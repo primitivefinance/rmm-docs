@@ -10,14 +10,16 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: 'Primitive',
-	tagline: 'Documentation and Guides',
-	url: 'https://docs.primitive.finanace',
+	tagline: 'Knowledge and Guides',
+	url: 'https://library.primitive.xyz',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/primitive-logo.png',
 	organizationName: 'PrimitiveFinance', // Usually your GitHub org/user name.
-	projectName: 'Primitive RMM Protocol Docs', // Usually your repo name.
+	projectName: 'Primitive Library', // Usually your repo name.
+
+
 
 	presets: [
 		[
@@ -48,7 +50,7 @@ const config = {
 			"@docusaurus/plugin-content-docs", {
 				id: 'technical',
 				path: 'docs/technical',
-				routeBasePath:'technical/',
+				routeBasePath: 'technical/',
 				sidebarPath: require.resolve('./sidebars.js')
 			}
 		],
@@ -56,8 +58,8 @@ const config = {
 			"@docusaurus/plugin-content-docs", {
 				id: 'ecosystem',
 				path: 'docs/ecosystem',
-				routeBasePath:'ecosystem/',
-				sidebarPath: require.resolve('./sidebars.js')
+				routeBasePath: 'ecosystem/',
+				sidebarPath: require.resolve('./ecosystem-sidebar.js')
 			}
 		],
 	],
@@ -71,9 +73,22 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
-			hideableSidebar: true,
+			colorMode: {
+				disableSwitch: true,
+				defaultMode: 'dark',
+			},
+			hideableSidebar: false,
+			/*
+			announcementBar: {
+				id: 'launch',
+				content:
+					'We are looking to revamp our library, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+				backgroundColor: '#fafbfc',
+				textColor: '#091E42',
+				isCloseable: true,
+			},
+			*/
 			navbar: {
-				title: 'Primitive Docs',
 				logo: {
 					alt: 'Primitive Logo',
 					src: 'img/primitive-logo.png',
@@ -81,15 +96,26 @@ const config = {
 				items: [
 					{
 						type: 'doc',
-						docId: 'overview',
+						docId: 'introduction',
 						position: 'left',
 						label: 'FAQ',
 					},
-					{ to: '/technical/overview', label: 'Technical', position: 'left', },
+					{
+						to: '/technical/smart-contracts/overview',
+						label: 'Technical',
+						position: 'left',
+					},
 					{
 						label: 'Ecosystem',
 						to: '/ecosystem/overview',
 						position: 'left',
+					},
+					{
+						to: 'https://app.primitive.xyz',
+						target: '_blank',
+						label: 'Use Primitive',
+						position: 'right',
+						className: 'use'
 					},
 				],
 			},
@@ -101,7 +127,7 @@ const config = {
 						items: [
 							{
 								label: 'Whitepaper',
-								to: 'https://primitive.finance/whitepaper-rmm-01.pdf',
+								to: 'https://primitive.xyz/whitepaper-rmm-01.pdf',
 							},
 							{
 								label: 'GitHub',
@@ -127,12 +153,12 @@ const config = {
 						items: [
 							{
 								label: 'App',
-								href: 'https://app.primitive.finance/',
+								href: 'https://app.primitive.xyz/',
 							},
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()} Primitive.`,
+				// copyright: `Copyright © ${new Date().getFullYear()} Primitive.`,
 			},
 			prism: {
 				theme: lightCodeTheme,

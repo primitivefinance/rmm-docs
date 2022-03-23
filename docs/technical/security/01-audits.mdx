@@ -1,0 +1,60 @@
+---
+description: Audits.
+---
+
+# Audits
+
+The security of the RMM protocol is our main priority, hence our smart contracts went through multiple audits performed by top security companies:
+
+export const audits = [
+  {
+    name: 'Trail of Bits',
+    date: 'January 2022 (8 weeks)',
+    link: 'https://github.com/primitivefinance/rmm-core/tree/main/audits/tob',
+  },
+  {
+    name: 'Chain Security',
+    date: 'September 2021 (8 weeks)',
+    link: 'https://github.com/primitivefinance/rmm-core/tree/main/audits/chainsecurity',
+  },
+  {
+    name: 'ABDK',
+    date: 'September 2021 (4 weeks)',
+    link: 'https://github.com/primitivefinance/rmm-core/tree/main/audits/abdk',
+  },
+  {
+    name: 'Dedaub',
+    date: 'September 2021 (4 weeks)',
+    link: 'https://github.com/primitivefinance/rmm-core/tree/main/audits/dedaub',
+  },
+  {
+    name: 'Sherlock',
+    date: 'August 2021 - Now (Continuous review)',
+    link: 'https://github.com/primitivefinance/rmm-core/tree/main/audits/sherlock',
+  },
+]
+
+<div className="audit__list">
+  {Object.entries(audits).map(([key, value]) => (
+    <a
+      key={key}
+      className="audit__link"
+      href={value.link}
+      target="_blank"
+    >
+      <div className="audit">
+        <div>
+          <div className="audit__title">
+            {value.name}
+          </div>
+          <div className="audit__date">
+            {value.date}
+          </div>
+        </div>
+        <div>
+          PDF
+        </div>
+      </div>
+    </a>
+  ))}
+</div>
