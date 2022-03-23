@@ -5,20 +5,23 @@ description: Frequently asked questions about Primitive and RMM protocol in gene
 
 # Getting Started
 
+## RMM Primer
+
+A comprehensive and friendly guide to using Primitive is available here on the Primitive blog: [RMM Primer](https://primitive.mirror.xyz/Audtl29HY_rnhN4E2LwnP7-zjDcDGAyXZ4h3QpDeajg).
+
 ## What is Primitive all about?
 
-Primitive is an ecosystem of efforts to build an innovative and oracle-free solution to DeFi derivatives. Under Primitive is a US equity company Primitive Bits, the decentralized RMM protocol, and the Primitive Interfaces.
+Primitive is an ecosystem of efforts to build an innovative and oracle-free solution to DeFi derivatives. Under Primitive is a US equity company Primitive Bits, the decentralized RMM protocol, and the Primitive Products.
 
 **Company:** The company is a US incorporated legal entity that develops protocols, products, and interfaces for the Primitive ecosystem.
 
 **RMM Protocol:** RMM protocol is a set of immutable smart contracts which do not grant special permission to the Company and cannot be altered.
 
-**Interfaces:** The interfaces are open-source code hosted on a company controlled domain [primitive.finance](https://primitive.finance), as well as decentrally hosted through [IPFS](https://ipfs.io). All interfaces are available to be downloaded and run locally.
+**Products:** The products and their interfaces are open-source code hosted on a company controlled domain [primitive.xyz](https://primitive.xyz), as well as decentrally hosted through [IPFS](https://ipfs.io). All interfaces are available to be downloaded and run locally.
 
 ## What is the motivation behind Primitive?
 
 Oracles in DeFi remain one of the largest centralization risks and economic attack vectors. This risk translates down to any user of an oracle embedded protocol.
-
 
 As derivatives in DeFi scale beyond the size of crypto spot markets, reliance on oracles becomes a systemic risk which will correlate protocols much closer than they desire to be. With an oracle-free protocol, these systemic risks are not exacerbated to all the other protocols which have composed with RMM. The result of this is ultimately lower risk, safer yields, and more adoption of RMM liquidity.
 
@@ -42,7 +45,7 @@ No. RMM protocol is non-upgradeable and does not have any admin keys. Once deplo
 
 ## How can I use Primitive?
 
-There is an interface for RMM protocol hosted on [primitive.finance](https://primitive.finance).
+There is an interface for RMM protocol hosted on [primitive.xyz](https://primitive.xyz).
 
 Alternatively, it can be access through [IPFS](https://ipfs.io), or even downloaded from [github](https://github.com/primitivefinance) and run locally.
 

@@ -1,19 +1,22 @@
 ---
-title: Best Practises
+title: Best Practices when Using Primitive
 description: Frequently asked questions about Primitive and RMM protocol in general
 ---
 
-# Best Practises
+# Best Practices
 
-Smart contracts and decentralized applications are brand new technologies that might require some time to be assimilated. Sadly, swindlers are using this as an opportunity to organize scams targeting the less aware users.
-Here is a collection of *best practises*, aiming at protecting our community.
+Here is a collection of *best practices* to follow when interacting with Primitive, or any crypto protocol:
 
 ## General
 
 ### Domain Verification
 
-One of the most important check when using a decentralized application is to be sure that you are on the right domain: [app.primitive.finance](https://app.primitive.finance). Common practices are to either bookmark the valid address or type it directly in your browser, avoid using links from search engines (especially sponsored ones)!
+One of the most important check when using a decentralized application is to be sure that you are using a verified domain, for Primitive this is [app.primitive.xyz](https://app.primitive.xyz). Common practices are to either bookmark the domain or type it directly in your browser, avoid using links from search engines (especially sponsored ones)!
 
 ### Wallet Safety
 
 You should **never** disclose your private key (or seed phrase) with anyone! Sharing this information with a malicious entity could result in the loss of all of your assets, including the control of your wallet.
+
+### Token Approvals
+
+Interacting with the Protocol requires token approvals, granting the immutable (and audited) smart contract control over the approved tokens. It is a best practice to revoke approvals when you are done using the protocol.

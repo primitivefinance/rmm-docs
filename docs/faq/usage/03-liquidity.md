@@ -13,7 +13,7 @@ RMM protocol offers pools that are rebalanced by arbitrageurs to achieve desired
 
 ### How are the pools rebalanced without an oracle?
 
-Only the incentivation between RMM pools and other exchanges causes the RMM pools to be rebalanced, eliminating the need for an oracle.
+Only the incentivization between RMM pools and other exchanges causes the RMM pools to be rebalanced, eliminating the need for an oracle.
 
 These two scenarios are dependent on the underlying asset price when compared to the `strike` price defined in the pool. If the asset price on a reference market (e.g. another DEX) is more than the `strike` price in an RMM pool, an arbitrageur or trader could swap to the asset at a cost of `strike`, and sell it for more on that reference DEX price. This results in the liquidity being rebalanced until it is 100% composed of the stable token (i.e. no underlying assets are left in the pool, because they were bought to take advantage of a price discrepency on another market). This is the desired behavior, because it matches the payoff of a covered call which expired in-the-money ("ITM").
 
@@ -75,7 +75,7 @@ Covered calls naturally accrue value (called _theta_) as time until an expiratio
 
 ### How does theta match swap fees?
 
-RMM-01 is a Constant Function Market Maker ("CFMM") with a **customized trading function**, that is **designed** to capture *theta* through swap fees. Read more in the [rmm-01 whitepaper](https://primitive.finance/whitepaper-rmm-01.pdf)
+RMM-01 is a Constant Function Market Maker ("CFMM") with a **customized trading function**, that is **designed** to capture *theta* through swap fees. Read more in the [rmm-01 whitepaper](https://primitive.xyz/whitepaper-rmm-01.pdf)
 
 ### Are there liquidity mining incentives?
 

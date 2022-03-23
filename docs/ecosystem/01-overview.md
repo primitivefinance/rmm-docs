@@ -4,7 +4,7 @@ description: Primitive Ecosystem Links
 
 # Community Resources
 
-Primitive is an open-source protocol with an open-source interface hosted at [https://app.primitive.finance](https://app.primitive.finance).
+Primitive is an open-source protocol with an open-source interface hosted at [https://app.primitive.xyz](https://app.primitive.xyz).
 
 Make sure to bookmark it to prevent using a fake app.
 

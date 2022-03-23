@@ -2,24 +2,37 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
+const Highlight = [
+	{
+		title: 'RMM Primer',
+		href: 'https://primitive.mirror.xyz/Audtl29HY_rnhN4E2LwnP7-zjDcDGAyXZ4h3QpDeajg',
+		target: '_blank',
+		description: (
+			<>
+				Friendly guide to using Primitive.
+			</>
+		),
+	},
+];
+
 const GettingStartedList = [
 	{
 		title: 'FAQ',
-		href: '/faq/overview',
+		href: '/faq/introduction',
 		target: '_self',
 		description: (
 			<>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				Answers to common questions like "What is Primitive?".
 			</>
 		),
 	},
 	{
 		title: 'Technical',
-		href: '/technical/overview',
+		href: '/technical/smart-contracts/overview',
 		target: '_self',
 		description: (
 			<>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				Specifications and guides for developers who want to build, integrate, or use Primitive.
 			</>
 		),
 	},
@@ -29,7 +42,7 @@ const GettingStartedList = [
 		target: '_self',
 		description: (
 			<>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				External knowledge and resources related to Primitive.
 			</>
 		),
 	},
@@ -107,6 +120,16 @@ export default function HomepageFeatures() {
 			<div className="container">
 				<div className={styles.section}>
 					<h2 className={styles.title}>
+						Guides
+					</h2>
+					<div className="row">
+						{Highlight.map((props, idx) => (
+							<Feature key={idx} {...props} />
+						))}
+					</div>
+				</div>
+				<div className={styles.section}>
+					<h2 className={styles.title}>
 						Getting Started
 					</h2>
 					<div className="row">
@@ -117,7 +140,7 @@ export default function HomepageFeatures() {
 				</div>
 				<div className={styles.section}>
 					<h2 className={styles.title}>
-						Repos
+						Source Code
 					</h2>
 					<div className="row">
 						{Repos.map((props, idx) => (

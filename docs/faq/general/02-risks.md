@@ -5,7 +5,7 @@ description: Frequently asked questions about Primitive and RMM protocol in gene
 
 # Risks
 
-The security of our protocol is our main priority, however it's impossible to guarantee a risk-free environment, and it makes sense to be aware of all its components.
+Security is the number one focus during the development process, however, it's impossible to guarantee a risk-free environment. The following sections explain the risks when using the decentralized RMM Protocol or Primitive Products.
 
 ## Smart Contract Risks
 
@@ -13,26 +13,24 @@ The security of our protocol is our main priority, however it's impossible to gu
 
 Yes. RMM protocol contracts have been audited by five security firms, making it one of the most audited set of smart contracts in DeFi (if not the most). You can learn more about it on our [dedicated page](/technical/security/audits).
 
-While these audits give high confidence in the protocol's security, the smart contracts still have the possibility of containing bugs. Along with the audits, Primitive has a $1,000,000 bug bounty on [Immunefi](https://immunefi.com/bounty/primitive/), and $10,000,000 of coverage by [Sherlock](https://sherlock.xyz/).
+While these audits give high confidence in the protocol's security, the smart contracts still have the possibility of containing bugs. Along with the audits, Primitive has a $1,000,000 bug bounty on [Immunefi](https://immunefi.com/bounty/primitive/).
 
 ### Are there any admin Keys?
 
-No, our contracts are completely decentralized and permissionless, we *DO NOT* control them by any means.
+No, RMM smart contracts are completely decentralized and permissionless, the Primitive team has *NO* control over them.
 
 ### Are the contracts upgradeable?
 
 The core contracts of the RMM protocol are **immutable**, which means that they cannot be updated.
 
-However, the [PositionRenderer](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/PositionRenderer.sol) contract, responsible of displaying the visuals of our liquidity pool tokens is upgradeable. But this contract doesn't contain any actionable logic, besides rendering graphics.
-
 ## Usage Risks
 
 ### Are there any financial risks using RMM?
 
-Yes, we recommend reading carefully our documentation or asking questions on our Discord server if some aspects of our protocol remain unclear.
+Yes, we recommend reading the knowledge base and guides in the Primitive Library or asking questions in the Primitive Discord server if some aspects of the protocol remain unclear.
 
 ## Oracle Risks
 
 ### Are there any risks linked to oracles?
 
-None! RMM doesn't rely on any oracles.
+None! RMM Protocol does not use, rely upon, or need price feed oracles.

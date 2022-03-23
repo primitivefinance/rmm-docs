@@ -22,7 +22,7 @@ const sidebars = {
     {
       type: 'link',
       label: 'Blog',
-      href: 'https://primitive.finance/blog/'
+      href: 'https://primitive.xyz/blog/'
     },
     {
       type: 'link',

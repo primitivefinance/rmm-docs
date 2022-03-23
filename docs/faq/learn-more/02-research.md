@@ -16,7 +16,7 @@ Take this you'll need it...
 
 ## Primitive RMM-01 Whitepaper
 
-[Whitepaper](https://primitive.finance/whitepaper-rmm-01.pdf)
+[Whitepaper](https://primitive.xyz/whitepaper-rmm-01.pdf)
 
 ## Maths
 

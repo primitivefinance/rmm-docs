@@ -1,5 +1,5 @@
 ---
-description: 'Primitive and RMM Protocol Documentation'
+description: 'Primitive Library'
 sidebar_position: 1
 ---
 

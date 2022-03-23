@@ -18,7 +18,7 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`Documentation - Primitive and RMM Protocol`}
+      title={`Library - Primitive and RMM Protocol`}
       description="Comprehensive manual for Primitive and RMM protocol - Crypto Derivatives without Oracles">
       <HomepageHeader />
       <main>

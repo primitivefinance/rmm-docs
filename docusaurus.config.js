@@ -10,14 +10,14 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: 'Primitive',
-	tagline: 'Documentation and Guides',
-	url: 'https://docs.primitive.finanace',
+	tagline: 'Knowledge and Guides',
+	url: 'https://library.primitive.xyz',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/primitive-logo.png',
 	organizationName: 'PrimitiveFinance', // Usually your GitHub org/user name.
-	projectName: 'Primitive RMM Protocol Docs', // Usually your repo name.
+	projectName: 'Primitive Library', // Usually your repo name.
 
 
 
@@ -82,7 +82,7 @@ const config = {
 			announcementBar: {
 				id: 'launch',
 				content:
-					'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+					'We are looking to revamp our library, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
 				backgroundColor: '#fafbfc',
 				textColor: '#091E42',
 				isCloseable: true,
@@ -111,7 +111,8 @@ const config = {
 						position: 'left',
 					},
 					{
-						to: '/',
+						to: 'https://app.primitive.xyz',
+						target: '_blank',
 						label: 'Use Primitive',
 						position: 'right',
 						className: 'use'
@@ -126,7 +127,7 @@ const config = {
 						items: [
 							{
 								label: 'Whitepaper',
-								to: 'https://primitive.finance/whitepaper-rmm-01.pdf',
+								to: 'https://primitive.xyz/whitepaper-rmm-01.pdf',
 							},
 							{
 								label: 'GitHub',
@@ -152,7 +153,7 @@ const config = {
 						items: [
 							{
 								label: 'App',
-								href: 'https://app.primitive.finance/',
+								href: 'https://app.primitive.xyz/',
 							},
 						],
 					},
