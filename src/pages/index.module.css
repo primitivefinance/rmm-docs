@@ -5,19 +5,22 @@
 
 .heroBanner {
   height: 450px;
-  background: linear-gradient(to bottom, #0000, #151718), url('/img/library1b.jpeg');
+  background: url("/img/library1b.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
+  margin-top: 80px;
   text-align: center;
   position: relative;
   overflow: hidden;
   background-color: #151718;
-  color: #ECEDEE;
+  color: #ecedee;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 16px;
+  opacity: 80%;
 }
 
 .heroBanner h1 {
