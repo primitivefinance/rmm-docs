@@ -22,6 +22,8 @@
 
   --ifm-navbar-background-color: transparent;
   --ifm-navbar-height: 69px;
+
+  /* --ifm-table-stripe-background: rgba(var(--ifm-color-gray-100), 0.9); */
 }
 
 .navbar {
@@ -64,7 +66,6 @@
 
 table {
   border: 1px solid #4c5155;
-  border-radius: 12px;
   background-color: #1a1d1e;
   width: fit-content;
 }
@@ -95,7 +96,6 @@ table tr {
 
 .audit {
   border: 1px solid #3a3f42;
-  border-radius: 12px;
   background-color: #26292b;
   padding: 16px;
   color: #ecedee;
