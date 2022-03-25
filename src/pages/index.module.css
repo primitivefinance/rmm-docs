@@ -2,10 +2,14 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+.heroBannerWrapper {
+  position: relative;
+}
 
 .heroBanner {
-  height: 450px;
-  background: url("/img/library1b.jpeg");
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/img/library1b.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +29,38 @@
 
 .heroBanner h1 {
   margin: 0;
+}
+.heroBannerText {
+  position: absolute;
+  padding: 10px 20px;
+  font-weight: 400;
+  color: rgb(236, 237, 238);
+  bottom: 0;
+  left: 0;
+}
+.heroBannerText h2 {
+  font-weight: 500;
+  margin: 0;
+}
+.heroBannerText p {
+  font-weight: 400;
+  margin: 0;
+}
+.heroBannerButton {
+  position: absolute;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: rgb(236, 237, 238);
+  background-color: rgba(38, 41, 43, 0.5);
+  border: 1px solid #697177;
+  border-radius: 8px;
+  margin-right: 20px;
+  bottom: 0;
+  right: 0;
+  transition: all 0.25s;
+}
+.heroBannerButton:hover {
+  opacity: 75%;
 }
 
 @media screen and (max-width: 966px) {

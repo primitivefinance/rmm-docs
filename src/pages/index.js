@@ -9,8 +9,17 @@ import HomepageFeatures from '../components/HomepageFeatures';
 function HomepageHeader() {
   return (
     <div className="container">
-      <header className={styles.heroBanner}>
-      </header>
+      <div className={styles.heroBannerWrapper}>
+        <header className={styles.heroBanner}>
+        </header>
+        <span className={styles.heroBannerText}>
+          <h2>Explore the Primitive Protocol</h2>
+          <p>Learn more about the smart contracts that power Primitive.</p>
+        </span>
+        <a target="_blank" href="/technical/smart-contracts/overview">
+          <h3 className={styles.heroBannerButton}>Read the Docs</h3>
+        </a>
+      </div>
     </div>
   );
 }
