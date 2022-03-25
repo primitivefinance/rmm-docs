@@ -11,8 +11,8 @@ The latest version of our deployed contracts are listed below, they are all depl
 
 | Name | Address | Networks |
 | -------- | -------- | -------- |
-| PrimitiveFactory (`Mainnet`) | `0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068` | [Mainnet (`1`)](https://etherscan.io/address/0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068)<br />[Rinkeby (`4`)](https://rinkeby.etherscan.io/address/0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068)<br />[Kovan (`42`)](https://kovan.etherscan.io/address/0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068)<br />[Goerli (`5`)](https://goerli.etherscan.io/address/0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068) |
-| PrimitiveManager (`Mainnet`) | `0x54522dA62a15225C95b01bD61fF58b866C50471f` | [Mainnet (`1`)](https://etherscan.io/address/0x54522dA62a15225C95b01bD61fF58b866C50471f)<br />[Rinkeby (`4`)](https://rinkeby.etherscan.io/address/0x54522dA62a15225C95b01bD61fF58b866C50471f)<br />[Kovan (`42`)](https://kovan.etherscan.io/address/0x54522dA62a15225C95b01bD61fF58b866C50471f)<br />[Goerli (`5`)](https://goerli.etherscan.io/address/0x54522dA62a15225C95b01bD61fF58b866C50471f) |
+| PrimitiveFactory | `0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068` | [Mainnet (`1`)](https://etherscan.io/address/0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068)<br />[Rinkeby (`4`)](https://rinkeby.etherscan.io/address/0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068)<br />[Kovan (`42`)](https://kovan.etherscan.io/address/0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068)<br />[Goerli (`5`)](https://goerli.etherscan.io/address/0x5cA2D631a37B21E5de2BcB0CbB892D723A96b068) |
+| PrimitiveManager | `0x54522dA62a15225C95b01bD61fF58b866C50471f` | [Mainnet (`1`)](https://etherscan.io/address/0x54522dA62a15225C95b01bD61fF58b866C50471f)<br />[Rinkeby (`4`)](https://rinkeby.etherscan.io/address/0x54522dA62a15225C95b01bD61fF58b866C50471f)<br />[Kovan (`42`)](https://kovan.etherscan.io/address/0x54522dA62a15225C95b01bD61fF58b866C50471f)<br />[Goerli (`5`)](https://goerli.etherscan.io/address/0x54522dA62a15225C95b01bD61fF58b866C50471f) |
 
 ## Wrapped Native Token Addresses
 
