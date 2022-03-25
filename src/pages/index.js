@@ -10,7 +10,6 @@ import {
   TwitterLogoIcon,
   DiscordLogoIcon,
 } from '@radix-ui/react-icons'
-import { map } from 'lodash';
 
 function HomepageHeader() {
   return (
