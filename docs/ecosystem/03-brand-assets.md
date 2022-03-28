@@ -24,14 +24,12 @@ Above is the primary logomark for Primitive. Using the below assets you can down
   <img width="50" src="https://drive.google.com/uc?export=view&id=1K11uQHePV5a5_oPshlDnWLJtbPgF8dVE"/>
 </p>
 
+<a href="https://drive.google.com/uc?export=download&id=1BwX9OErn1QMJnVpPN4_1OixSJqt1gPS2" download>Download SVG</a>
 
-SVG
-<a href="https://drive.google.com/uc?export=download&id=1BwX9OErn1QMJnVpPN4_1OixSJqt1gPS2" download>Download</a>
+<br />
+<br />
 
----
-
-PNG
-<a href="https://drive.google.com/uc?export=download&id=1Jmj2COeyh-x2U17DWejSABk1e90x17Ud" download>Download</a>
+<a href="https://drive.google.com/uc?export=download&id=1Jmj2COeyh-x2U17DWejSABk1e90x17Ud" download>Download PNG</a>
 
 
 ### On Dark Colored Background
@@ -40,13 +38,12 @@ PNG
   <img width="50" src="https://drive.google.com/uc?export=view&id=1mb_ShxeF891tT2Xfg5n4ydrT3jyLHXaR"/>
 </p>
 
-SVG
-<a href="https://drive.google.com/uc?export=download&id=10DCRUjEYOUMmfQNua0SUma3rF2bcKXVy" download>Download</a>
+<a href="https://drive.google.com/uc?export=download&id=10DCRUjEYOUMmfQNua0SUma3rF2bcKXVy" download>Download SVG</a>
 
----
+<br />
+<br />
 
-PNG
-<a href="https://drive.google.com/uc?export=download&id=1r0RBywdbpb-o8V3W3nhEbaJ3aBGS8m9c" download>Download</a>
+<a href="https://drive.google.com/uc?export=download&id=1r0RBywdbpb-o8V3W3nhEbaJ3aBGS8m9c" download>Download PNG</a>
 
 <br />
 <br />
@@ -70,13 +67,13 @@ Above is the primary logotype for Primitive. Using the below assets you can down
   <img width="130" src="https://drive.google.com/uc?export=view&id=1xQsHV79KKmS_Q7KtqCcw4ScNFyz8AQK7"/>
 </p>
 
-SVG
-<a href="https://drive.google.com/uc?export=download&id=1Yr8WNuFzp9Iz1rGDnZwoMO2Sx3TQbxfy" download>Download</a>
+<a href="https://drive.google.com/uc?export=download&id=1Yr8WNuFzp9Iz1rGDnZwoMO2Sx3TQbxfy" download>Download SVG</a>
 
----
+<br />
+<br />
 
-PNG
-<a href="https://drive.google.com/uc?export=download&id=1YqP_qMdscLV97M1epysKPtIvLHhEO5EA" download>Download</a>
+
+<a href="https://drive.google.com/uc?export=download&id=1YqP_qMdscLV97M1epysKPtIvLHhEO5EA" download>Download PNG</a>
 
 
 ### On Dark Colored Background
@@ -85,13 +82,12 @@ PNG
   <img width="130" src="https://drive.google.com/uc?export=view&id=1ZunqSYJvcI3L3kcTdxauIjD-GO8Qinen"/>
 </p>
 
-SVG
-<a href="https://drive.google.com/uc?export=download&id=1SBhr4WG9OPi3vdEqaA46Tn2DWZrk1vUl" download>Download</a>
+<a href="https://drive.google.com/uc?export=download&id=1SBhr4WG9OPi3vdEqaA46Tn2DWZrk1vUl" download>Download SVG</a>
 
----
+<br />
+<br />
 
-PNG
-<a href="https://drive.google.com/uc?export=download&id=10iSbfTxbK65n55Q_q6alzy4Iq0VexQ93" download>Download</a>
+<a href="https://drive.google.com/uc?export=download&id=10iSbfTxbK65n55Q_q6alzy4Iq0VexQ93" download>Download PNG</a>
 
 <br />
 <br />
