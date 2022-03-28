@@ -28,14 +28,31 @@ npm install
 yarn
 ```
 
-3. Have fun! You can have a look at the different contracts and run the tests using:
+3. Have fun! You can have a look at the different contracts and run the different commands:
 
 ```bash
-# Using npm
-npx hardhat test ./test/...
+# Using npm and npx
+
+# Compile the contracts
+npm run compile
+
+# Run a test
+npx hardhat test ./path/to/the/test.ts
+
+# Style the contracts using Prettier
+npm run prettier
+
 
 # Using yarn
-yarn hardhat test ./test/...
+
+# Compile the contracts
+yarn compile
+
+# Run a test
+yarn hardhat test ./path/to/the/test.ts
+
+# Style the contracts using Prettier
+yarn prettier
 ```
 
 ## Extending
