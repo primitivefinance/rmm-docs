@@ -2,6 +2,8 @@
 description: All Primitive and RMM Protocol brand assets.
 ---
 
+# Brand Assets
+
 All Primitive and RMM Protocol brand assets.
 
 ---
