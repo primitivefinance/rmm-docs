@@ -4,6 +4,33 @@ description: All Primitive and RMM Protocol brand assets.
 
 # Brand Assets
 
+export const Color = ({ name, color }) => (
+  <div
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '2rem',
+    }}>
+    <span
+      style={{
+        fontWeight: 700,
+        fontSize: '28px',
+        display: 'block',
+      }}
+    >
+      {color}
+    </span>
+    <span
+      style={{
+        fontSize: '18px',
+      }}
+    >
+      {name}
+    </span>
+  </div>
+);
+
 All Primitive and RMM Protocol brand assets.
 
 ---
@@ -98,29 +125,17 @@ Above is the primary logotype for Primitive. Using the below assets you can down
 ## Color Palette
 
 ### Primary
-Hex: #10B3A3
 
-<p align="left">
-  <img width="500" src="https://drive.google.com/uc?export=view&id=1R_UFAhbfkUvXIPD8wXxaJQNWiKmZ_BBE"/>
-</p>
+<Color name="Primary" color="#10B3A3" />
 
 ### Secondary
-Hex: #5373E7
 
-<p align="left">
-  <img width="500" src="https://drive.google.com/uc?export=view&id=1SVFJtOFyxAMuEaAYMI1UdHBx-hjOBxTy"/>
-</p>
+<Color name="Secondary" color="#5373E7" />
 
 ### Accent
-Hex: #F04F88
 
-<p align="left">
-  <img width="500" src="https://drive.google.com/uc?export=view&id=1sOistSzmQVO-_xu3o6PqC1dqopC8tdBP"/>
-</p>
+<Color name="Accent" color="#F04F88" />
 
 ### Neutral
-Hex: #787F85
 
-<p align="left">
-  <img width="500" src="https://drive.google.com/uc?export=view&id=1KnbQL3L_8epHSu7eL6hTmsm3H_y-21Ow"/>
-</p>
+<Color name="Neutral" color="#787F85" />
