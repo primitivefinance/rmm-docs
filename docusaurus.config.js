@@ -93,79 +93,39 @@ const config = {
         alt: 'Primitive Logo',
         src: 'img/primitive-logo.png',
       },
-      items: [
-        {
-          type: 'doc',
-          docId: 'introduction',
-          position: 'left',
-          label: 'FAQ',
-        },
-        {
-          to: '/technical/smart-contracts/overview',
-          label: 'Technical',
-          position: 'left',
-        },
-        {
-          label: 'Ecosystem',
-          to: '/ecosystem/overview',
-          position: 'left',
-        },
-        {
-          to: 'https://app.primitive.xyz',
-          target: '_blank',
-          label: 'Use Primitive',
-          position: 'right',
-          className: 'use'
-        },
-      ],
+
+        items: [
+          {
+            type: 'doc',
+            docId: 'introduction',
+            position: 'left',
+            label: 'FAQ',
+          },
+          {
+            to: '/technical/smart-contracts/overview',
+            label: 'Technical',
+            position: 'left',
+          },
+          {
+            label: 'Ecosystem',
+            to: '/ecosystem/overview',
+            position: 'left',
+          },
+          {
+            to: 'https://app.primitive.xyz',
+            target: '_blank',
+            label: 'Use Primitive',
+            position: 'right',
+            className: 'use'
+          },
+        ],
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+        additionalLanguages: ['typescript', 'solidity'],
+      },
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Developers',
-          items: [
-            {
-              label: 'Whitepaper',
-              to: 'https://primitive.xyz/whitepaper-rmm-01.pdf',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/primitivefinance/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/primitive',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/PrimitiveFi',
-            },
-          ],
-        },
-        {
-          title: 'Products',
-          items: [
-            {
-              label: 'App',
-              href: 'https://app.primitive.xyz/',
-            },
-          ],
-        },
-      ],
-      // copyright: `Copyright © ${new Date().getFullYear()} Primitive.`,
-    },
-    prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
-      additionalLanguages: ['typescript', 'solidity'],
-    },
-  },
 };
 
 module.exports = config;
