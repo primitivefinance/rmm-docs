@@ -15,14 +15,19 @@
   --ifm-color-primary-lightest: #9dd9bf;
   --ifm-code-font-size: 95%;
   --ifm-link-color: #0091FF;
+  --ifm-navbar-link-hover-color: #ECEDEE;
 
   --ifm-font-family-base: "Suisse Intl";
 
   --ifm-background-color: #151718;
+  --ifm-background-surface-color: #151718;
   --ifm-footer-background-color: #151718;
 
-  --ifm-navbar-background-color: transparent;
+  --ifm-navbar-background-color: #151718;
   --ifm-navbar-height: 69px;
+  --ifm-container-width-xl: 66.67%;
+
+  --ifm-spacing-horizontal: 0;
 
   /* --ifm-table-stripe-background: rgba(var(--ifm-color-gray-100), 0.9); */
 }
@@ -31,11 +36,18 @@
   background-color: #151718;
   box-shadow: none;
   position: relative;
-  padding: 1rem;
+  padding: 0rem;
+}
+
+.navbar__inner {
+  background-color: #151718;
+  margin: auto;
+  width: 66.67%;
 }
 
 .navbar__item {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .navbar__link {
@@ -118,7 +130,7 @@ table tr {
 
 .use {
   border-color: #0000;
-  background-color: #12a594;
+  background-color: #0091FF;
   color: #ecedee;
   font-family: "Suisse Intl";
   font-style: normal;
@@ -128,7 +140,7 @@ table tr {
   text-align: center;
   border-width: 1px;
   border-style: solid;
-  padding: 0 1rem !important;
+  padding: 0.5rem 1rem !important;
   border-radius: 12px;
   height: 2.25rem;
   align-items: center;
@@ -143,7 +155,7 @@ table tr {
 }
 
 html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #151718;
   --ifm-heading-font-weight: 500;
 }
 

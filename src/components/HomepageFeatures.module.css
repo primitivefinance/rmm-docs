@@ -3,6 +3,8 @@
   align-items: center;
   width: 100%;
   margin-top: 3rem;
+  margin: auto;
+  padding: 0;
 }
 
 .section {
@@ -27,6 +29,7 @@
   background-color: #26292b;
   padding: 16px;
   color: #ecedee;
+  margin-right: 4px;
 }
 
 .stuff:hover {
@@ -46,6 +49,8 @@
 .stuff h3 {
   font-size: 28px;
   font-weight: 800;
+  display: flex;
+  align-items: center;
 }
 
 .stuff h4 {

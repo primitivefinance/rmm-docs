@@ -34,7 +34,7 @@ function Footer() {
     return clsx(classNameString.split(' ').map(cn => styles[cn]))
   }
   return <section className={clsx(styles['w-full'], styles['relative'], styles['py-16'], styles['bg-slate3'], styles['flex'], styles['justify-center'])}>
-    <div className={clsx(styles['w-5/6'], styles['md:w-4/6'], styles['lg:w-3/6'], styles['flex'], styles['flex-col'], styles['items-center'])}>
+    <div className={clsx(styles['w-5/6'], styles['md:w-4/6'], styles['lg:w-2/3'], styles['flex'], styles['flex-col'], styles['items-center'])}>
       <div className={clsx(styles['w-full'], styles['grid'], styles['grid-cols-1'], styles['md:grid-cols-4'], styles['md:gap-0'], styles['gap-6'], styles['justify-between'])} >
         <div className={clsx(styles['flex'], styles['flex-col'], styles['items-center'], styles['justify-center'], styles['md:justify-start'], styles['md:items-start'], styles['gap-4'])}>
           <img src="/img/FooterIcon.svg" alt="footerLogo" />
