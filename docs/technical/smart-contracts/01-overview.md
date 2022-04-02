@@ -7,7 +7,7 @@ description: >-
 
 # Overview
 
-The Replicating Market Maker (RMM-01) protocol is a collection of immutable smart contracts written in Solidity. Inspired by other projects, such as Uniswap, the architecture is divided in two parts, the core and the manager, interacting together.
+The Replicating Market Maker (RMM-01) protocol is a collection of immutable smart contracts written in Solidity. Inspired by other projects such as Uniswap, the architecture is divided in two parts, the "core" and the "manager", interacting together.
 
 Here is a complete overview of the protocol:
 
@@ -22,4 +22,4 @@ This Engine has an extra feature to carry an internal token balance (called `mar
 
 ## Manager
 
-The manager part designates the `PrimitiveManager`, `PositionDescriptor ` and `PositionRenderer`.
+The manager part designates the `PrimitiveManager`, `PositionDescriptor` and `PositionRenderer`. The former contract is responsible of interacting with `PrimitiveEngine` contracts and managing users' positions, and the two other contracts are taking care of the metadata and the rendering of the liquidity pool tokens.
