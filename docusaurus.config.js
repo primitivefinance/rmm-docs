@@ -93,13 +93,7 @@ const config = {
         alt: 'Primitive Logo',
         src: 'img/primitive-logo.png',
       },
-      items: [
-        {
-          type: 'doc',
-          docId: 'introduction',
-          position: 'left',
-          label: 'FAQ',
-        },
+
         items: [
           {
             type: 'doc',
@@ -131,7 +125,7 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['typescript', 'solidity'],
       },
-    }),
+    },
 };
 
 module.exports = config;
