@@ -93,7 +93,7 @@ const Repos = [
 
 function Feature({ title, href, target, description, step }) {
   return (
-    <div className={clsx('col ')} >
+    <div className={clsx('col ')} style={{ marginBottom: '8px' }} >
       <a className={styles.homelink} href={href} target={target}>
         <div className={styles.stuff}>
           {step ? <h2>{step}</h2> : null}
@@ -107,7 +107,7 @@ function Feature({ title, href, target, description, step }) {
 
 function Repo({ name, href }) {
   return (
-    <div className={clsx('col col--4')} >
+    <div className={clsx('col col--4')} style={{ marginBottom: '8px' }} >
       <a className={styles.homelink} href={href} target="_blank">
         <div className={styles.stuff}>
           <div className={styles.repo}>
