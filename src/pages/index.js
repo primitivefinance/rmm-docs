@@ -48,15 +48,17 @@ function Footer() {
         <div className={clsx(styles['flex'], styles['flex-col'], styles['items-center'], styles['justify-center'])}>
           <div className={clsx(styles['text-center'], styles['md:text-left'])}>
             <p className={clsx(styles['text-slate8'], styles['text-xs'], styles['mb-2'])}>Organization</p>
-            <p className={clsx(styles['text-hiContrast'], styles['text-xs'], styles['mb-1'])}><a href="/people">People</a></p>
+            <p className={clsx(styles['text-hiContrast'], styles['text-xs'], styles['mb-1'])}><a href="https://primitive.xyz/people" target={'_blank'}
+              rel="noreferrer">People</a></p>
             <p className={clsx(styles['text-hiContrast'], styles['text-xs'], styles['mb-1'])}><a href="mailto:contact@primitive.xyz">Contact</a></p>
           </div>
         </div>
         <div className={clsx(styles['flex'], styles['flex-col'], styles['items-center'], styles['justify-center'])}>
           <div className={clsx(styles['md:text-left'], styles['text-center'])}>
             <p className={clsx(styles['text-slate8'], styles['text-xs'], styles['mb-2'])}>Resources</p>
-            <p className={clsx(styles['text-hiContrast'], styles['text-xs'], styles['mb-1'])}><a className={clsx(styles['text-hiContrast'])} href="/blog">Blog</a></p>
-            <p className={clsx(styles['text-hiContrast'], styles['text-xs'], styles['mb-1'])}><a href="/library">Library</a></p>
+            <p className={clsx(styles['text-hiContrast'], styles['text-xs'], styles['mb-1'])}><a className={clsx(styles['text-hiContrast'])} href="https://primitive.xyz/blog" target={'_blank'}
+              rel="noreferrer">Blog</a></p>
+            <p className={clsx(styles['text-hiContrast'], styles['text-xs'], styles['mb-1'])}><a href="/">Library</a></p>
           </div>
         </div>
         <div className={clsx(styles['flex'], styles['flex-row'], styles['items-center'], styles['justify-center'], styles['gap-4'])}>
