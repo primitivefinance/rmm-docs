@@ -68,6 +68,11 @@
     padding: 2rem;
   }
 }
+@media screen and (max-width: 640px) {
+  .heroBannerText {
+    top: 20px;
+  }
+}
 
 .buttons {
   display: flex;
