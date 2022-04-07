@@ -1,10 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 const Highlight = [
   {
     title: 'RMM Primer',
+    step: '01',
     href: 'https://primitive.mirror.xyz/Audtl29HY_rnhN4E2LwnP7-zjDcDGAyXZ4h3QpDeajg',
     target: '_blank',
     description: (
@@ -18,6 +20,7 @@ const Highlight = [
 const GettingStartedList = [
   {
     title: 'FAQ',
+    step: '02',
     href: '/faq/introduction',
     target: '_self',
     description: (
@@ -28,6 +31,7 @@ const GettingStartedList = [
   },
   {
     title: 'Technical',
+    step: '03',
     href: '/technical/smart-contracts/overview',
     target: '_self',
     description: (
@@ -38,6 +42,7 @@ const GettingStartedList = [
   },
   {
     title: 'Ecosystem',
+    step: '04',
     href: '/ecosystem/overview',
     target: '_self',
     description: (
@@ -86,12 +91,13 @@ const Repos = [
   },
 ]
 
-function Feature({ title, href, target, description }) {
+function Feature({ title, href, target, description, step }) {
   return (
-    <div className={clsx('col ')} >
+    <div className={clsx('col ')} style={{ marginBottom: '8px' }} >
       <a className={styles.homelink} href={href} target={target}>
         <div className={styles.stuff}>
-          <h3>{title}</h3>
+          {step ? <h2>{step}</h2> : null}
+          <h3>{title} <ArrowRightIcon style={{ paddingLeft: '0.25rem',alignItems: 'center'}} width={24} height={24}/></h3> 
           <p>{description}</p>
         </div>
       </a>
@@ -101,7 +107,7 @@ function Feature({ title, href, target, description }) {
 
 function Repo({ name, href }) {
   return (
-    <div className={clsx('col col--4')} >
+    <div className={clsx('col col--4')} style={{ marginBottom: '8px' }} >
       <a className={styles.homelink} href={href} target="_blank">
         <div className={styles.stuff}>
           <div className={styles.repo}>
