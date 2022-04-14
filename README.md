@@ -2,6 +2,8 @@
 description: Introduction of Primitive
 ---
 
+Primitive built the Replicating Market Maker protocol, a scalable and efficient solution to on-chain derivatives.
+
 # Table of contents
 
 * [What is Primitive?](library/faq/01-overview.md)
