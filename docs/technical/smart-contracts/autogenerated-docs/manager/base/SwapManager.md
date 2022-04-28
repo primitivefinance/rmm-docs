@@ -3,7 +3,7 @@ description: SwapManager contract
 ---
 
 # SwapManager.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/SwapManager.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/SwapManager.sol)
 
 
 

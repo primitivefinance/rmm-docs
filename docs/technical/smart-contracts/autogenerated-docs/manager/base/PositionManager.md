@@ -3,7 +3,7 @@ description: PositionManager contract
 ---
 
 # PositionManager.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/PositionManager.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/PositionManager.sol)
 
 Wraps the positions into ERC1155 tokens
 

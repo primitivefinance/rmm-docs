@@ -3,7 +3,7 @@ description: View functions of the Primitive Engine contract
 ---
 
 # IPrimitiveEngineView.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/engine/IPrimitiveEngineView.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/interfaces/engine/IPrimitiveEngineView.sol)
 
 
 

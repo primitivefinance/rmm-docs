@@ -3,7 +3,7 @@ description: Interface of PositionDescriptor contract
 ---
 
 # IPositionDescriptor.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IPositionDescriptor.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/IPositionDescriptor.sol)
 
 
 

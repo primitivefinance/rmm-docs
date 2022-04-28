@@ -3,7 +3,7 @@ description: PositionRenderer contract
 ---
 
 # PositionRenderer.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/PositionRenderer.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/PositionRenderer.sol)
 
 Manages the visual representation of the Primitive protocol position tokens
 

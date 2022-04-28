@@ -3,7 +3,7 @@ description: IERC20
 ---
 
 # IERC20.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IERC20.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/interfaces/IERC20.sol)
 
 
 

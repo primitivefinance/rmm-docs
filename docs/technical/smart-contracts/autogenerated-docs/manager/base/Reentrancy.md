@@ -3,7 +3,7 @@ description: Reentrancy contract
 ---
 
 # Reentrancy.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/Reentrancy.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/Reentrancy.sol)
 
 Prevents reentrancy
 

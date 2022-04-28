@@ -3,7 +3,7 @@ description: Primitive Liquidity Callback
 ---
 
 # IPrimitiveLiquidityCallback.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/callback/IPrimitiveLiquidityCallback.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/interfaces/callback/IPrimitiveLiquidityCallback.sol)
 
 
 

@@ -3,7 +3,7 @@ description: ERC20 Interface
 ---
 
 # IERC20.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/external/IERC20.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/external/IERC20.sol)
 
 
 

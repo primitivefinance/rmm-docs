@@ -3,7 +3,7 @@ description: Primitive Engine Interface
 ---
 
 # IPrimitiveEngine.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IPrimitiveEngine.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/interfaces/IPrimitiveEngine.sol)
 
 
 

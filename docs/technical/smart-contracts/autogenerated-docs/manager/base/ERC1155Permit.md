@@ -3,7 +3,7 @@ description: ERC1155Permit contract
 ---
 
 # ERC1155Permit.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/ERC1155Permit.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/ERC1155Permit.sol)
 
 ERC1155 contract with permit extension allowing approvals to be made via signatures
 

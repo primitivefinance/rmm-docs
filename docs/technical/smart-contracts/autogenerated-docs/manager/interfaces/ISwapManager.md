@@ -3,7 +3,7 @@ description: Interface of SwapManager contract
 ---
 
 # ISwapManager.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/ISwapManager.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/ISwapManager.sol)
 
 
 

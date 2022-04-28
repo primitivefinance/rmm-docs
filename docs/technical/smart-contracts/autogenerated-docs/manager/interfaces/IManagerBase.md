@@ -3,7 +3,7 @@ description: Interface of ManagerBase contract
 ---
 
 # IManagerBase.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IManagerBase.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/IManagerBase.sol)
 
 
 

@@ -3,7 +3,7 @@ description: Interface for permit
 ---
 
 # IERC20PermitAllowed.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/external/IERC20PermitAllowed.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/external/IERC20PermitAllowed.sol)
 
 Interface used by DAI/CHAI for permit
 

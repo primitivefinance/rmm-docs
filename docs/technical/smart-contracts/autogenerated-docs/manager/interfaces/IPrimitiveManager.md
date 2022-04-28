@@ -3,7 +3,7 @@ description: Interface of PrimitiveManager contract
 ---
 
 # IPrimitiveManager.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IPrimitiveManager.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/IPrimitiveManager.sol)
 
 
 

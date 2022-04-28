@@ -3,7 +3,7 @@ description: Primitive Create Callback
 ---
 
 # IPrimitiveCreateCallback.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/callback/IPrimitiveCreateCallback.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/interfaces/callback/IPrimitiveCreateCallback.sol)
 
 
 

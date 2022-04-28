@@ -3,7 +3,7 @@ description: Primitive Deposit Callback
 ---
 
 # IPrimitiveDepositCallback.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/callback/IPrimitiveDepositCallback.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/interfaces/callback/IPrimitiveDepositCallback.sol)
 
 
 

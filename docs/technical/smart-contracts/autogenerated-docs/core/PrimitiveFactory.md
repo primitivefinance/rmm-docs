@@ -3,7 +3,7 @@ description: Primitive Factory
 ---
 
 # PrimitiveFactory.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/PrimitiveFactory.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/PrimitiveFactory.sol)
 
 No access controls are available to deployer
 

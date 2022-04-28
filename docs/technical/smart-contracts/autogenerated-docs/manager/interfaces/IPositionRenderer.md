@@ -3,7 +3,7 @@ description: Interface of PositionRenderer contract
 ---
 
 # IPositionRenderer.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IPositionRenderer.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/IPositionRenderer.sol)
 
 
 

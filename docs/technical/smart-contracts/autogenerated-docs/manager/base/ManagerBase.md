@@ -3,7 +3,7 @@ description: ManagerBase contract
 ---
 
 # ManagerBase.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/ManagerBase.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/ManagerBase.sol)
 
 Base contract of the Manager
 
