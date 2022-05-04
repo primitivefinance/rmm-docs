@@ -17,10 +17,24 @@ const Highlight = [
   },
 ];
 
+const Research = [
+  {
+    title: 'Primitive Whitepaper',
+    step: '01',
+    href: 'https://primitive.xyz/whitepaper',
+    target: '_blank',
+    description: (
+      <>
+        Formal investigation of the theory and implementation of Primitive Replicating Market Makers.
+      </>
+    ),
+  },
+];
+
 const GettingStartedList = [
   {
     title: 'FAQ',
-    step: '02',
+    step: '01',
     href: '/faq/introduction',
     target: '_self',
     description: (
@@ -31,7 +45,7 @@ const GettingStartedList = [
   },
   {
     title: 'Technical',
-    step: '03',
+    step: '02',
     href: '/technical/smart-contracts/overview',
     target: '_self',
     description: (
@@ -42,7 +56,7 @@ const GettingStartedList = [
   },
   {
     title: 'Ecosystem',
-    step: '04',
+    step: '03',
     href: '/ecosystem/overview',
     target: '_self',
     description: (
@@ -124,6 +138,16 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.section}>
+          <h2 className={styles.title}>
+            Research
+          </h2>
+          <div className="row">
+            {Research.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
         <div className={styles.section}>
           <h2 className={styles.title}>
             Guides
