@@ -3,7 +3,7 @@ description: Primitive Engine
 ---
 
 # PrimitiveEngine.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/PrimitiveEngine.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/PrimitiveEngine.sol)
 
 Replicating Market Maker
 

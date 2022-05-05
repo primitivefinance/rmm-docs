@@ -3,7 +3,7 @@ description: Multicall contract
 ---
 
 # Multicall.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/Multicall.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/Multicall.sol)
 
 Enables calling multiple methods in a single call to the contract
 

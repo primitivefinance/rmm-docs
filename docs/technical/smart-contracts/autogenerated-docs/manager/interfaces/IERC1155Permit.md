@@ -3,7 +3,7 @@ description: Interface of ERC1155Permit contract
 ---
 
 # IERC1155Permit.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IERC1155Permit.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/IERC1155Permit.sol)
 
 
 

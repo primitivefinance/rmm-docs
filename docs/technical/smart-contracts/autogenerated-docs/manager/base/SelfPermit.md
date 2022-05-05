@@ -3,7 +3,7 @@ description: SelfPermit contract
 ---
 
 # SelfPermit.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/SelfPermit.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/SelfPermit.sol)
 
 Functionality to call permit on any EIP-2612-compliant token
 

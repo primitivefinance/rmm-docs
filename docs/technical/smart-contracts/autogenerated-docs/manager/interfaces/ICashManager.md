@@ -3,7 +3,7 @@ description: Interface of CashManager contract
 ---
 
 # ICashManager.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/ICashManager.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/ICashManager.sol)
 
 
 

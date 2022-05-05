@@ -3,7 +3,7 @@ description: PositionDescriptor contract
 ---
 
 # PositionDescriptor.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/PositionDescriptor.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/PositionDescriptor.sol)
 
 Manages the metadata of the Primitive protocol position tokens
 

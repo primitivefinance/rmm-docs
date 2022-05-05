@@ -3,7 +3,7 @@ description: PrimitiveManager contract
 ---
 
 # PrimitiveManager.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/PrimitiveManager.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/PrimitiveManager.sol)
 
 Interacts with Primitive Engine contracts
 

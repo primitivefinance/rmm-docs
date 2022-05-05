@@ -3,7 +3,7 @@ description: Primitive Factory Interface
 ---
 
 # IPrimitiveFactory.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IPrimitiveFactory.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-core/blob/main/contracts/interfaces/IPrimitiveFactory.sol)
 
 
 

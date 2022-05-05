@@ -3,7 +3,7 @@ description: CashManager contract
 ---
 
 # CashManager.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/CashManager.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/CashManager.sol)
 
 Utils contract to manage ETH and token balances
 

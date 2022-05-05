@@ -3,7 +3,7 @@ description: Interface of Multicall contract
 ---
 
 # IMulticall.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/IMulticall.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/IMulticall.sol)
 
 
 

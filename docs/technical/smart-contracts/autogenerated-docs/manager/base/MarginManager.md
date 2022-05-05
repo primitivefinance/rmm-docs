@@ -3,7 +3,7 @@ description: MarginManager contract
 ---
 
 # MarginManager.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/base/MarginManager.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/base/MarginManager.sol)
 
 Manages the margins
 

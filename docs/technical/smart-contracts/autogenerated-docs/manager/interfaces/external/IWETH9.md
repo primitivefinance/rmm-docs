@@ -3,7 +3,7 @@ description: Interface for WETH9
 ---
 
 # IWETH9.sol
-> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/tree/develop/contracts/interfaces/external/IWETH9.sol)
+> [Read code on GitHub](https://github.com/primitivefinance/rmm-manager/blob/main/contracts/interfaces/external/IWETH9.sol)
 
 
 
