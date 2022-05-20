@@ -29,6 +29,17 @@ const Research = [
       </>
     ),
   },
+  {
+    title: 'Replicating Portfolios: Constructing Permissionless Derivatives',
+    step: '02',
+    href: 'https://primitive.xyz/rmm-derivatives',
+    target: '_blank',
+    description: (
+      <>
+        Theoretical derivative constructions from RMM-01. 
+      </>
+    ),
+  },
 ];
 
 const GettingStartedList = [
@@ -111,7 +122,7 @@ function Feature({ title, href, target, description, step }) {
       <a className={styles.homelink} href={href} target={target}>
         <div className={styles.stuff}>
           {step ? <h2>{step}</h2> : null}
-          <h3>{title} <ArrowRightIcon style={{ paddingLeft: '0.25rem',alignItems: 'center'}} width={24} height={24}/></h3> 
+          <h3 className={clsx(styles['text-base '])}>{title} <ArrowRightIcon style={{ paddingLeft: '0.25rem',alignItems: 'center'}} width={24} height={24}/></h3> 
           <p>{description}</p>
         </div>
       </a>
