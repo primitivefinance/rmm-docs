@@ -32,7 +32,7 @@ const Research = [
   {
     title: 'Replicating Portfolios: Constructing Permissionless Derivatives',
     step: '02',
-    href: 'https://primitive.xyz/rmm-derivatives.pdf',
+    href: 'https://arxiv.org/abs/2205.09890',
     target: '_blank',
     description: (
       <>
