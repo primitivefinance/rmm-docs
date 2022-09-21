@@ -20,13 +20,13 @@ Take this you'll need it...
 
 ## Maths
 
-[Constant Function Market Makers](https://web.stanford.edu/\~guillean/papers/constant\_function\_amms.pdf)
+[Constant Function Market Makers](https://angeris.github.io/papers/constant_function_amms.pdf)
 
-[Replicating Market Makers](https://stanford.edu/\~guillean/papers/rmms.pdf)
+[Replicating Market Makers](https://angeris.github.io/papers/rmms.pdf)
 
-[Constant Function Market Maker Lending](https://stanford.edu/\~guillean/papers/cfmm-lending.pdf)
+[Constant Function Market Maker Lending](https://angeris.github.io/papers/cfmm-lending.pdf)
 
-[Replicating Monotone Payoffs Without Collateral](https://stanford.edu/\~guillean/papers/cfmm-monotone.pdf)
+[Replicating Monotone Payoffs Without Collateral](https://angeris.github.io/papers/cfmm-monotone.pdf)
 
 [Constant Product Market Makers: Uniswap](https://arxiv.org/abs/1911.03380)
 
